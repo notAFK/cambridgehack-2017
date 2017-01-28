@@ -2,6 +2,7 @@
 import sys
 import os
 import subprocess
+import dirconf
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
 start = 0
@@ -24,9 +25,9 @@ while success:
 	print "End duration: " + str(end)
 	print "##############################"
 	vidcap.set(0, end)
-	output = cv2.imwrite("data/" + "000" + frame_count + ".jpg", image)
+	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
 	end = end + increment
-	command = " ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + "data/frame_" + frame_count + ".wav"
+	command = "ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + dirconf.AUDIO + "/frame_" + frame_count + ".wav"
 
 	subprocess.call(command, shell=True)
  	#if (end >= 40000):
