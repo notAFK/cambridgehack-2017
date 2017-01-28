@@ -23,4 +23,9 @@ if __name__ == '__main__':
         if len(response) == 1:
             print 'ERROR'
         else:
-            responses.append(response)
+            responses.append({'frame': image[:6], 'faces': response})
+
+    response.append({'count': len(responses)})
+
+    with open(os.path.join(dirconf.DATA, 'summary.json'), 'w+') as summary:
+        json.dump(responses, summary, indent=4)
