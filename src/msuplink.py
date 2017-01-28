@@ -1,5 +1,4 @@
 import json
-import sys
 import requests
 import msconf
 import dirconf
@@ -44,12 +43,3 @@ def process_image(IMAGE):
                                         data=format_image(IMAGE))
 
     return json.loads(get_request.content)
-
-if __name__ == '__main__':
-    faces = process_image(dirconf.IMAGES + '/press.jpg')
-    for face in faces:
-        print face
-
-    # faces = process_url(msconf.TEST_URL)
-    # for face in faces:
-    #     print face
