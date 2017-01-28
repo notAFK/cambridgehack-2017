@@ -27,7 +27,7 @@ while success:
 	vidcap.set(0, end)
 	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
 	end = end + increment
-	command = "ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + dirconf.AUDIO + "/frame_" + frame_count + ".wav"
+	command = "ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + dirconf.AUDIO + "/000" + frame_count + ".wav"
 
 	subprocess.call(command, shell=True)
  	#if (end >= 40000):
