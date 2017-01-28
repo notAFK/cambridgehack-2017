@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
+import subprocess
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
 start = 0 
@@ -16,18 +17,22 @@ dir_path = ("/data")
 while success:      
 	frame_count = str(end/1000)
 	success,image = vidcap.read()
-	vidcap.set(start, end)
+	print "##############################"
+	print "Start duration: " + str(start)
+	print "End duration: " + str(end)
+	print "##############################"
+	vidcap.set(0, end)
 	output = cv2.imwrite("data/" + "000" + frame_count + ".jpg", image)
-	start = end
 	end = end + increment
- 	if (end >= 25000):
- 		break
+	#command = "ffmpeg -ss " + str(start/1000) + " -i " + sys.argv[1] + " -t " + str(end/1000) + " -ab 160k -ac 2 -ar 44100 -vn " +  frame_count + ".wav"
 
-import subprocess
+	#subprocess.call(command, shell=True)
+ 	#if (end >= 40000):
+ 		#break
 
-command = "ffmpeg -ss " + sys.argv[1] + " -ab 160k -ac 2 -ar 44100 -vn movie.wav"
 
-subprocess.call(command, shell=True)
+
+
 
 
 '''import http.client, urllib.parse, json
