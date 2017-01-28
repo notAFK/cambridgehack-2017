@@ -12,3 +12,6 @@
 # IMAGES
 *.jpg
 *.png
+
+# VIDEO
+*.mp4
