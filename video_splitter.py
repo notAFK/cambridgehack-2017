@@ -14,6 +14,8 @@ increment = end
 vidcap = cv2.VideoCapture(sys.argv[1])
 success,image = vidcap.read()
 dir_path = ("/data")
+
+
 while success:      
 	frame_count = str(end/1000)
 	success,image = vidcap.read()
@@ -24,9 +26,9 @@ while success:
 	vidcap.set(0, end)
 	output = cv2.imwrite("data/" + "000" + frame_count + ".jpg", image)
 	end = end + increment
-	#command = "ffmpeg -ss " + str(start/1000) + " -i " + sys.argv[1] + " -t " + str(end/1000) + " -ab 160k -ac 2 -ar 44100 -vn " +  frame_count + ".wav"
+	command = " ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + "data/frame_" + frame_count + ".wav"
 
-	#subprocess.call(command, shell=True)
+	subprocess.call(command, shell=True)
  	#if (end >= 40000):
  		#break
 
