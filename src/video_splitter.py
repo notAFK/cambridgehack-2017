@@ -1,33 +1,34 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
+import dirconf
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
-start = 0 
+start = 0
 if (len(sys.argv) > 2):
 	end = (int(sys.arg[-1])) * 1000
 else:
 	end = 5000 #define frame to capture
 
-increment = end 
+increment = end
 vidcap = cv2.VideoCapture(sys.argv[1])
 success,image = vidcap.read()
 dir_path = ("/data")
-while success:      
+while success:
 	frame_count = str(end/1000)
 	success,image = vidcap.read()
 	vidcap.set(start, end)
-	output = cv2.imwrite("data/" + "000" + frame_count + ".jpg", image)
+	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
 	start = end
 	end = end + increment
- 	if (end >= 25000):
- 		break
+ # 	if (end >= 25000):
+ # 		break
 
-import subprocess
-
-command = "ffmpeg -ss " + sys.argv[1] + " -ab 160k -ac 2 -ar 44100 -vn movie.wav"
-
-subprocess.call(command, shell=True)
+# import subprocess
+#
+# command = "ffmpeg -ss " + sys.argv[1] + " -ab 160k -ac 2 -ar 44100 -vn movie.wav"
+#
+# subprocess.call(command, shell=True)
 
 
 '''import http.client, urllib.parse, json
