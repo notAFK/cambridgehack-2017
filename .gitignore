@@ -1,0 +1,14 @@
+# BINARY FILES
+*.pyc
+
+# MISC FILEs
+*~
+*.DS_Store
+*.log
+*.rar
+*.7z
+*.zip
+
+# IMAGES
+*.jpg
+*.png
