@@ -67,5 +67,3 @@
 <script src="vendors/devbridge-autocomplete/dist/jquery.autocomplete.min.js"></script>
 <!-- starrr -->
 <script src="vendors/starrr/dist/starrr.js"></script>
-</body>
-</html>
