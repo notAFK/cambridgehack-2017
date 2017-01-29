@@ -10,7 +10,7 @@ def translate(AUDIO_FILE):
     with sr.AudioFile(AUDIO_FILE) as source:
         audio = r.record(source)
 
-    BING_KEY = "54b20e711d4243fea1472c2d6cb33b78"
+    BING_KEY = "439d1e38f3a24af094e25845d2528a0e"
 
     try:
         return r.recognize_bing(audio, key=BING_KEY)

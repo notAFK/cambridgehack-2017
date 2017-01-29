@@ -22,8 +22,8 @@ if __name__ == '__main__':
     text_list = []
     keyphrase_list = []
     for text in msaudio.translate_all():
-        text_list.append(mstext.process_text(text, 'f003a623c8f246b783e1f9c7076e4372'))
-        keyphrase_list.append(mstext.process_keyphrases(text, 'f003a623c8f246b783e1f9c7076e4372'))
+        text_list.append(mstext.process_text(text, '7109a293e5ef43538b6c6e14ee4e7b6d'))
+        keyphrase_list.append(mstext.process_keyphrases(text, '7109a293e5ef43538b6c6e14ee4e7b6d'))
 
     print 'PROCESSING ' + str(len(image_list)) + ' IMAGES'
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
         else:
             responses.append({'frame': image.split('.')[0][1:], 'faces': response, 'speech': text_list[i], 'keyphrases': keyphrase_list[i]})
 
-        time.sleep(4)
+#        time.sleep(4)
 
     print 'RESPONSES: ' + str(len(responses))
 

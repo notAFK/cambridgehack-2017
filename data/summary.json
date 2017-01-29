@@ -1593,8 +1593,10 @@
     }, 
     {
         "frame": "0036", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "big takeaway"
+        ], 
+        "speech": 0.3935316, 
         "faces": []
     }, 
     {
@@ -1678,8 +1680,10 @@
     }, 
     {
         "frame": "0040", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "engagez"
+        ], 
+        "speech": 0.4471368, 
         "faces": [
             {
                 "faceRectangle": {
@@ -2063,8 +2067,10 @@
     }, 
     {
         "frame": "0042", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "cloudbox"
+        ], 
+        "speech": 0.882212, 
         "faces": [
             {
                 "faceRectangle": {
@@ -2592,8 +2598,10 @@
     }, 
     {
         "frame": "0044", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.1760643, 
         "faces": [
             {
                 "faceRectangle": {
@@ -2725,8 +2733,10 @@
     }, 
     {
         "frame": "0046", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "percent"
+        ], 
+        "speech": 0.9328489, 
         "faces": [
             {
                 "faceRectangle": {
@@ -3020,8 +3030,10 @@
     }, 
     {
         "frame": "0048", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.6111726, 
         "faces": [
             {
                 "faceRectangle": {
@@ -3387,8 +3399,10 @@
     }, 
     {
         "frame": "0050", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "spector"
+        ], 
+        "speech": 0.8112377, 
         "faces": [
             {
                 "faceRectangle": {
@@ -3790,32 +3804,42 @@
     }, 
     {
         "frame": "0052", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.8090044, 
         "faces": []
     }, 
     {
         "frame": "0054", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9024243, 
         "faces": []
     }, 
     {
         "frame": "0056", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.805267, 
         "faces": []
     }, 
     {
         "frame": "0058", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.6038214, 
         "faces": []
     }, 
     {
         "frame": "0060", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9842836, 
         "faces": []
     }, 
     {
@@ -4283,8 +4307,10 @@
     }, 
     {
         "frame": "0066", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "words"
+        ], 
+        "speech": 0.4972859, 
         "faces": [
             {
                 "faceRectangle": {
@@ -4758,8 +4784,10 @@
     }, 
     {
         "frame": "0068", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "body weight"
+        ], 
+        "speech": 0.08180182, 
         "faces": []
     }, 
     {
@@ -4770,8 +4798,10 @@
     }, 
     {
         "frame": "0072", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "end"
+        ], 
+        "speech": 0.2868945, 
         "faces": [
             {
                 "faceRectangle": {
@@ -4831,8 +4861,10 @@
     }, 
     {
         "frame": "0074", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "tronada words"
+        ], 
+        "speech": 0.7717178, 
         "faces": [
             {
                 "faceRectangle": {
@@ -4874,8 +4906,10 @@
     }, 
     {
         "frame": "0076", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "body language"
+        ], 
+        "speech": 0.6649135, 
         "faces": [
             {
                 "faceRectangle": {
@@ -4917,8 +4951,10 @@
     }, 
     {
         "frame": "0078", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "little cold"
+        ], 
+        "speech": 0.5541736, 
         "faces": [
             {
                 "faceRectangle": {
@@ -4960,8 +4996,10 @@
     }, 
     {
         "frame": "0080", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "roboticizer"
+        ], 
+        "speech": 0.8214635, 
         "faces": [
             {
                 "faceRectangle": {
@@ -5003,8 +5041,10 @@
     }, 
     {
         "frame": "0082", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "someones interpr"
+        ], 
+        "speech": 0.8778115, 
         "faces": [
             {
                 "faceRectangle": {
@@ -5046,8 +5086,10 @@
     }, 
     {
         "frame": "0084", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "text"
+        ], 
+        "speech": 0.843, 
         "faces": [
             {
                 "faceRectangle": {
@@ -5089,8 +5131,10 @@
     }, 
     {
         "frame": "0086", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "thanks"
+        ], 
+        "speech": 0.8475448, 
         "faces": [
             {
                 "faceRectangle": {
@@ -5132,8 +5176,10 @@
     }, 
     {
         "frame": "0088", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "thanks"
+        ], 
+        "speech": 0.8475448, 
         "faces": [
             {
                 "faceRectangle": {
@@ -5175,8 +5221,10 @@
     }, 
     {
         "frame": "0090", 
-        "keyphrases": "null", 
-        "speech": "null", 
+        "keyphrases": [
+            "thanks"
+        ], 
+        "speech": 0.8475448, 
         "faces": []
     }
 ]

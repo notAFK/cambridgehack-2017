@@ -60,6 +60,7 @@ with open(dirconf.DATA + "/vs.log", 'a') as file:
 command = "/usr/local/bin/ffmpeg -i " + sys.argv[1] + " " + dirconf.UPLOAD + "/movie.wav"
 subprocess.call(command, shell=True)
 
+<<<<<<< HEAD
 with open(dirconf.DATA + "/vs.log", 'a') as file:
 		file.write("Generated WAV \n")
 
@@ -80,3 +81,37 @@ for i in range(total_time):
 
 with open(dirconf.DATA + "/vs.log", 'a') as file:
 		file.write("Success! \n")
+=======
+from pydub import AudioSegment
+from pydub.utils import make_chunks
+
+myaudio = AudioSegment.from_file(dirconf.UPLOAD+"/movie.wav" , "wav")
+chunk_length_ms = 2000 # pydub calculates in millisec
+chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
+
+#Export all of the individual chunks as wav files
+
+for i, chunk in enumerate(chunks):
+    chunk_name = dirconf.AUDIO + "/chunk1{:04d}.wav".format(i)
+    print "exporting", chunk_name
+    chunk.export(chunk_name, format="wav")
+
+'''import http.client, urllib.parse, json
+API_KEY = '28f7463c76344a06ace7b80405d27e6c'
+PARAMS = ""
+headers = {"Ocp-Apim-Subscription-Key": apiKey}
+AccessTokenHost = "https://api.cognitive.microsoft.com/"
+path = "/sts/v1.0/issueToken"
+print "Connecting to server to get access token"
+conn = http.client.HTTPSConnection(AccessTokenHost)
+conn.request("POST", path, PARAMS, headers)
+response = conn.getresponse()
+print (response.status, response.reason)
+data = response.read()
+conn.close()
+accesstoken = data.decode("UTF-8")
+print "Access token: " + accesstoken
+conn = http.clinet.HTTPSConnection("https://speech.platform.bing.com/recognize?scenarios=catsearch&appid=f84e364c-ec34-4773-a783-73707bd9a585&locale=en-US&device.os=wp7&version=3.0&format=json&requestid=" + accesstoken + "")
+headers = {"Content-Type: audio/wav",
+}'''
+>>>>>>> 4906844811ead0f22d7fdcf73c16e18d00f35b53

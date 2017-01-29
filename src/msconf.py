@@ -1,4 +1,4 @@
-API_KEY = '28f7463c76344a06ace7b80405d27e6c'
+API_KEY = 'd070ced621a441978e1dd1c43a606c3b'
 SERVICE = 'https://westus.api.cognitive.microsoft.com/emotion/v1.0/recognize'
 
 

@@ -79,8 +79,8 @@ a.tab-button.active {
               <div class="count" id="max-attentive">123</div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Min Attention Index</span>
-              <div class="count" id="max-attention-index">123</div>
+              <span class="count_top"><i class="fa fa-user"></i> Average Happiness Index</span>
+              <div class="count" id="avg-happiness-index">123</div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
               <span class="count_top"><i class="fa fa-clock-o"></i> Average Attention Index</span>
@@ -109,27 +109,7 @@ a.tab-button.active {
                       <p>Average Attention</p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="attention-bar" class="progress-bar attention" role="progressbar" data-transitiongoal="80"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-6">
-                    <div>
-                      <p>Max Attention</p>
-                      <div class="">
-                        <div class="progress progress_sm">
-                          <div id="attention-bar" class="progress-bar attention" role="progressbar" data-transitiongoal="80"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-6">
-                    <div>
-                      <p>Min Attention</p>
-                      <div class="">
-                        <div class="progress progress_sm">
-                          <div id="attention-bar" class="progress-bar attention" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="attention-bar-avg" class="progress-bar attention" role="progressbar"></div>
                         </div>
                       </div>
                     </div>
@@ -148,85 +128,85 @@ a.tab-button.active {
                 </div>
                 <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
                   <div class="x_title">
-                    <h2>Sentiments</h2>
+                    <h2>Average Sentiments</h2>
                     <div class="clearfix"></div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Happiness</p>
+                      <p>Happiness <span class="happiness-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="happiness-bar" class="progress-bar happiness" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="happiness-bar" class="progress-bar happiness" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Neutral</p>
+                      <p>Neutral <span class="neutral-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="neutral-bar" class="progress-bar neutral" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="neutral-bar" class="progress-bar neutral" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Contempt</p>
+                      <p>Contempt <span class="contempt-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="contempt-bar" class="progress-bar contempt" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="contempt-bar" class="progress-bar contempt" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Disgust</p>
+                      <p>Disgust <span class="disgust-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="disgust-bar" class="progress-bar disgust" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="disgust-bar" class="progress-bar disgust" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Anger</p>
+                      <p>Anger <span class="anger-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="anger-bar" class="progress-bar anger" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="anger-bar" class="progress-bar anger" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Surprise</p>
+                      <p>Surprise <span class="surprise-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="surprise-bar" class="progress-bar surprise" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="surprise-bar" class="progress-bar surprise" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Fear</p>
+                      <p>Fear <span class="fear-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="fear-bar" class="progress-bar fear" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="fear-bar" class="progress-bar fear" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-6">
                     <div>
-                      <p>Sadness</p>
+                      <p>Sadness <span class="sadness-percent"></span></p>
                       <div class="">
                         <div class="progress progress_sm">
-                          <div id="sadness-bar" class="progress-bar sadness" role="progressbar" data-transitiongoal="80"></div>
+                          <div id="sadness-bar" class="progress-bar sadness" role="progressbar"  ></div>
                         </div>
                       </div>
                     </div>
@@ -272,6 +252,15 @@ a.tab-button.active {
                 <div id="plot-video-contempt" class="video-placeholder demo-placeholder"></div>
                 <div id="plot-video-disgust" class="video-placeholder demo-placeholder"></div>
                 <div id="plot-video-neutral" class="video-placeholder demo-placeholder"></div>
+                <br>
+                <div class="x_title">
+                  <h2>Key Phrases</h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <p id="keyphrases">ugi pula in cur</p>
+                  <div class="clearfix"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -293,7 +282,7 @@ var theVideoPlots = {
   };
 $(document).ready(function() {
   var processData = function() {
-    var d = <?=file_get_contents('results.json')?>;
+    var a = <?=file_get_contents('results.json')?>;
     var graphData = {
       "attention": [],
       "happiness": [],
@@ -305,18 +294,21 @@ $(document).ready(function() {
       "fear": [],
       "sadness": [],
   };
-    d = d["averages"];
+    d = a["averages"];
+    graphData["speech"] = []
     for(var i=0; i<d.length; i++) {
-      graphData["attention"].push([d[i]["frame"], d[i]["attentionIndex"]]);
-      graphData["happiness"].push([d[i]["frame"], d[i]["averageHappiness"]]);
-      graphData["neutral"].push([d[i]["frame"], d[i]["averageNeutral"]]);
-      graphData["anger"].push([d[i]["frame"], d[i]["averageAnger"]]);
-      graphData["contempt"].push([d[i]["frame"], d[i]["averageContempt"]]);
-      graphData["disgust"].push([d[i]["frame"], d[i]["averageDisgust"]]);
-      graphData["surprise"].push([d[i]["frame"], d[i]["averageSurprise"]]);
-      graphData["fear"].push([d[i]["frame"], d[i]["averageFear"]]);
-      graphData["sadness"].push([d[i]["frame"], d[i]["averageSadness"]]);
+      graphData["attention"].push([d[i]["frame"], d[i]["info"]["attentionIndex"]]);
+      graphData["happiness"].push([d[i]["frame"], d[i]["info"]["averageHappiness"]]);
+      graphData["neutral"].push([d[i]["frame"], d[i]["info"]["averageNeutral"]]);
+      graphData["anger"].push([d[i]["frame"], d[i]["info"]["averageAnger"]]);
+      graphData["contempt"].push([d[i]["frame"], d[i]["info"]["averageContempt"]]);
+      graphData["disgust"].push([d[i]["frame"], d[i]["info"]["averageDisgust"]]);
+      graphData["surprise"].push([d[i]["frame"], d[i]["info"]["averageSurprise"]]);
+      graphData["fear"].push([d[i]["frame"], d[i]["info"]["averageFear"]]);
+      graphData["sadness"].push([d[i]["frame"], d[i]["info"]["averageSadness"]]);
+      graphData["speech"][d[i]["frame"]] = {"sentiment": d[i]["speech"], "kp": d[i]["keyphrases"]};
     }
+    graphData["avgs"] = a["videoAverages"];
     return graphData;
   },
   setAttentionPlot = function() {
@@ -455,6 +447,31 @@ $(document).ready(function() {
         color: 'darkblue'
       }
     ], options);
+    // General data
+    $("#max-attentive").text(graphData['avgs']['maxFaces']);
+    $("#avg-happiness-index").text(parseFloat(graphData['avgs']['averageHappiness']*100).toFixed(2)+'%');
+    $("#avg-attention-index").text(parseFloat(graphData['avgs']['attentionIndex']*100).toFixed(2)+'%');
+    $("#attention-bar-avg").css("width", "42%");
+    $("#common-sentiment").text(graphData['avgs']['mostCommon']);
+    $("#sentiment-percentage").text(parseFloat(graphData['avgs']['mostCommonPercentage']*100).toFixed(2)+'%');
+    // Sentiments
+    $("#happiness-bar").css('width', graphData['avgs']['averageHappiness']*100+'%');
+    $("#sadness-bar").css('width', graphData['avgs']['averageSadness']*100+'%');
+    $("#contempt-bar").css('width', graphData['avgs']['averageContempt']*100+'%');
+    $("#disgust-bar").css('width', graphData['avgs']['averageDisgust']*100+'%');
+    $("#anger-bar").css('width', graphData['avgs']['averageAnger']*100+'%');
+    $("#surprise-bar").css('width', graphData['avgs']['averageSurprise']*100+'%');
+    $("#fear-bar").css('width', graphData['avgs']['averageFear']*100+'%');
+    $("#neutral-bar").css('width', graphData['avgs']['averageNeutral']*100+'%');
+    $(".happiness-percent").text(parseFloat(graphData['avgs']['averageHappiness']*100).toFixed(2)+'%');
+    $(".sadness-percent").text(parseFloat(graphData['avgs']['averageSadness']*100).toFixed(2)+'%');
+    $(".contempt-percent").text(parseFloat(graphData['avgs']['averageContempt']*100).toFixed(2)+'%');
+    $(".disgust-percent").text(parseFloat(graphData['avgs']['averageDisgust']*100).toFixed(2)+'%');
+    $(".anger-percent").text(parseFloat(graphData['avgs']['averageAnger']*100).toFixed(2)+'%');
+    $(".surprise-percent").text(parseFloat(graphData['avgs']['averageSurprise']*100).toFixed(2)+'%');
+    $(".fear-percent").text(parseFloat(graphData['avgs']['averageFear']*100).toFixed(2)+'%');
+    $(".neutral-percent").text(parseFloat(graphData['avgs']['averageNeutral']*100).toFixed(2)+'%');
+
     $(".progress .progress-bar").progressbar();
   },
   videoPlot = function(data) {
@@ -517,6 +534,11 @@ $(document).ready(function() {
               $("#plot-video-" + sentiment).bind("cursorupdates", function(event, cursordata) {
                 if(theVideo.get(0).paused) {
                   theVideo.get(0).currentTime = cursordata[0].x;
+                  // key phrases
+                  var posFrame = pad(Math.floor(cursordata[0].x), 4);
+                  if(graphData["speech"][posFrame]) {
+                    $("#keyphrases").text(graphData["speech"][posFrame]["kp"]);
+                  }
                 }
               });
             };
@@ -555,15 +577,22 @@ function onTrackedVideoFrame(currentTime, duration){
   for (var key in theVideoPlots) {
     // skip loop if the property is from prototype
     if (!theVideoPlots.hasOwnProperty(key)) continue;
-
       theVideoPlots[key].setCursor(theVideoPlots[key].getCursors()[0], {
         position: {
           x: currentTime,
           y: 0.5
         }
       });
+      var posFrame = pad(Math.floor(currentTime), 4);
+      if(graphData["speech"][posFrame]) {
+        $("#keyphrases").text(graphData["speech"][posFrame]["kp"]);
+      }
       theVideoPlots[key].draw();
     }
+}
+function pad (str, max) {
+  str = str.toString();
+  return str.length < max ? pad("0" + str, max) : str;
 }
 </script>
 </body>

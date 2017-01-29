@@ -1,0 +1,656 @@
+{
+    "videoAverages": {
+        "averageDisgust": 0.0, 
+        "averageFear": 0.0, 
+        "averageSurprise": 0.0, 
+        "averageSadness": 0.0, 
+        "averageContempt": 0.0, 
+        "averageAnger": 0.0, 
+        "attentionIndex": 0.0, 
+        "averageHappiness": 0.0, 
+        "averageNeutral": 0.0
+    }, 
+    "averages": [
+        {
+            "averageDisgust": 0, 
+            "averageFear": 0, 
+            "averageSurprise": 0, 
+            "averageSadness": 0, 
+            "averageContempt": 0, 
+            "averageAnger": 0, 
+            "attentionIndex": 0, 
+            "averageHappiness": 0, 
+            "averageNeutral": 0
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0002"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0004"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0006"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0008"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0010"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0012"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0014"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0016"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0018"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0020"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0022"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0024"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0026"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0028"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0030"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0032"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0034"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0036"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0038"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0040"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0042"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0044"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0046"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0048"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0050"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0052"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0054"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0056"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0058"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0060"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0062"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0064"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0066"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0068"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0070"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0072"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0074"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0076"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0078"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0080"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0082"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0084"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0086"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0088"
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0090"
+        }
+    ]
+}
