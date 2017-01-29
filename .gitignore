@@ -16,3 +16,7 @@
 # VIDEO
 *.mp4
 *.MOV
+
+# AUDIO
+*.wav
+*.mp3
