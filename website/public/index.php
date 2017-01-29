@@ -438,11 +438,11 @@ $(document).ready(function() {
     ], options);
     // General data
     $("#max-attentive").text("132");
-    $("#avg-happiness-index").text(graphData['avgs']['videoHappiness']);
+    $("#avg-happiness-index").text(parseFloat(graphData['avgs']['videoHappiness']*100).toFixed(2)+'%');
     $("#avg-attention-index").text("0.42");
-    $("#attention-bar-avg").css("width", "43%");
+    $("#attention-bar-avg").css("width", "42%");
     $("#common-sentiment").text("Neutral");
-    $("#sentiment-percentage").text("46%");
+    $("#sentiment-percentage").text("50.24%");
     // Sentiments
     $("#happiness-bar").css('width', graphData['avgs']['videoHappiness']*100+'%');
     $("#sadness-bar").css('width', graphData['avgs']['videoSadness']*100+'%');
