@@ -26,15 +26,14 @@ for frame in data:
     infoPerFrame.update({"attentionIndex": len(frame["faces"])/float(maxfaces)})
 
     for face in frame["faces"]:
-       for score in face["scores"]:
-            totalSadness += face["scores"]["sadness"]
-            totalNeutral += face["scores"]["neutral"]
-            totalContempt += face["scores"]["contempt"]
-            totalDisgust += face["scores"]["disgust"]
-            totalAnger += face["scores"]["anger"]
-            totalSurprise += face["scores"]["surprise"]
-            totalFear += face["scores"]["fear"]
-            totalHappiness += face["scores"]["happiness"]
+        totalSadness += face["scores"]["sadness"]
+        totalNeutral += face["scores"]["neutral"]
+        totalContempt += face["scores"]["contempt"]
+        totalDisgust += face["scores"]["disgust"]
+        totalAnger += face["scores"]["anger"]
+        totalSurprise += face["scores"]["surprise"]
+        totalFear += face["scores"]["fear"]
+        totalHappiness += face["scores"]["happiness"]
 
     print totalNeutral
     print len(frame["faces"])

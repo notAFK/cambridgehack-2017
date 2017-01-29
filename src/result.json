@@ -1,0 +1,38 @@
+[
+    {
+        "averageDisgust": 0.0026732045686, 
+        "averageFear": 0.0021508490199999997, 
+        "averageSurprise": 0.0035828836779999997, 
+        "averageSadness": 0.0877930983, 
+        "averageNeutral": 0.6968225224, 
+        "frame": "000000", 
+        "attentionIndex": 0.8333333333333334, 
+        "averageHappiness": 0.16097945412599998, 
+        "averageContempt": 0.040082089698, 
+        "averageAnger": 0.005915893624000001
+    }, 
+    {
+        "averageDisgust": 0.0027125088571666664, 
+        "averageFear": 0.00256762785, 
+        "averageSurprise": 0.004018958003333333, 
+        "averageSadness": 0.10573822625000001, 
+        "averageNeutral": 0.6967133853333333, 
+        "frame": "000001", 
+        "attentionIndex": 1.0, 
+        "averageHappiness": 0.1342742375383333, 
+        "averageContempt": 0.04869691538166667, 
+        "averageAnger": 0.005278132631666667
+    }, 
+    {
+        "averageDisgust": 0.0026142481357500002, 
+        "averageFear": 0.0015256807750000001, 
+        "averageSurprise": 0.0029287721899999997, 
+        "averageSadness": 0.060875406374999996, 
+        "averageNeutral": 0.696986228, 
+        "frame": "000002", 
+        "attentionIndex": 0.6666666666666666, 
+        "averageHappiness": 0.20103727900749999, 
+        "averageContempt": 0.0271598511725, 
+        "averageAnger": 0.0068725351125000006
+    }
+]
