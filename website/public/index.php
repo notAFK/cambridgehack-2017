@@ -7,12 +7,15 @@ require_once 'header.php';
   max-width: 600px;
   margin: auto;
 }
-#plot-chart.demo-placeholder {
+.demo-placeholder,
+a {
     -khtml-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+  }
+#plot-chart {
     height: 400px;
 }
 .video-placeholder.demo-placeholder {
