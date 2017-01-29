@@ -30,7 +30,10 @@ def process_text(mytext, apikey):
         answer = shortname.post('https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/sentiment', headers=write_header(apikey), data=write_doc_string(mytext))
     returndict = json.loads(answer.content)
     print returndict
-    return returndict['documents'][0]['score']
+    try:
+        return returndict['documents'][0]['score']
+    except:
+        return "null"
 
 
 def process_keyphrases(mytext, apikey):
@@ -40,4 +43,7 @@ def process_keyphrases(mytext, apikey):
         answer = shortname.post('https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases', headers=write_header(apikey), data=write_doc_string(mytext))
     returndict = json.loads(answer.content)
     print returndict
-    return returndict['documents'][0]['keyPhrases']
+    try:
+        return returndict['documents'][0]['keyPhrases']
+    except:
+        return "null"
