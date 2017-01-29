@@ -14,16 +14,16 @@ if (len(sys.argv) > 2):
 else:
 	end = 0 #define frame to capture
 
-	frame_count = str(end/1000)
+	frame_count = end/1000
 	print vidcap.grab()
-	
+
 	success,image = vidcap.read()
 	print "##############################"
 	print "Start duration: " + str(start)
 	print "End duration: " + str(end)
 	print "##############################"
 	vidcap.set(0, end)
-	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
+	output = cv2.imwrite(dirconf.IMAGES + "/1{:04d}".format(frame_count)  + ".jpg", image)
 	start = end
 	end = end + 2000
 
@@ -31,14 +31,14 @@ increment = end
 vidcap = cv2.VideoCapture(sys.argv[1])
 success,image = vidcap.read()
 while success:
-	frame_count = str(end/1000)
+	frame_count = end/1000
 	success,image = vidcap.read()
 	print "##############################"
 	print "Start duration: " + str(start)
 	print "End duration: " + str(end)
 	print "##############################"
 	vidcap.set(cv2.cv.CV_CAP_PROP_POS_MSEC, end)
-	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
+	output = cv2.imwrite(dirconf.IMAGES + "/1{:04d}".format(frame_count) + ".jpg", image)
 	start = end
 	end = end + increment
  	#if (end >= 40000):
@@ -57,7 +57,7 @@ chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
 #Export all of the individual chunks as wav files
 
 for i, chunk in enumerate(chunks):
-    chunk_name = dirconf.AUDIO + "/chunk000{0}.wav".format(i)
+    chunk_name = dirconf.AUDIO + "/chunk1{:04d}.wav".format(i)
     print "exporting", chunk_name
     chunk.export(chunk_name, format="wav")
 
