@@ -55,7 +55,7 @@ try {
     }
   }
 
-  if(!shell_exec(PY_COMMAND . ' ' . '../../src/video_splitter.py ' . realpath($target_file)));
+  if(shell_exec(PY_COMMAND . ' ' . '../../src/video_splitter.py ' . realpath($target_file)));
   if(!shell_exec(PY_COMMAND . ' ' . '../../src/indexer.py'));
   if(!shell_exec(PY_COMMAND . ' ' . '../../src/analysis.py results.json'));
 
