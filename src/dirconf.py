@@ -7,3 +7,4 @@ DATA = os.path.join(ROOT, 'data')
 
 IMAGES = os.path.join(DATA, 'images')
 UPLOAD = os.path.join(DATA, 'upload')
+AUDIO = os.path.join(DATA, 'audio')
