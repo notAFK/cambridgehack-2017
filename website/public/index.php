@@ -247,7 +247,7 @@ a.tab-button.active {
                       width="100%"
                       style="display:block;width:100%"
                       controls="controls">
-                      <source src="test.mp4" type="audio/mp4">
+                      <source src="video.mp4" type="audio/mp4">
                   </audio>
                 </div>
                 <div class="tab-bar">
@@ -293,7 +293,7 @@ var theVideoPlots = {
   };
 $(document).ready(function() {
   var processData = function() {
-    var d = <?=file_get_contents('test.json')?>;
+    var d = <?=file_get_contents('results.json')?>;
     var graphData = {
       "attention": [],
       "happiness": [],

@@ -64,27 +64,18 @@ for i, chunk in enumerate(chunks):
 '''import http.client, urllib.parse, json
 API_KEY = '28f7463c76344a06ace7b80405d27e6c'
 PARAMS = ""
-
 headers = {"Ocp-Apim-Subscription-Key": apiKey}
-
 AccessTokenHost = "https://api.cognitive.microsoft.com/"
 path = "/sts/v1.0/issueToken"
-
 print "Connecting to server to get access token"
-
 conn = http.client.HTTPSConnection(AccessTokenHost)
 conn.request("POST", path, PARAMS, headers)
 response = conn.getresponse()
-
 print (response.status, response.reason)
-
 data = response.read()
 conn.close()
-
 accesstoken = data.decode("UTF-8")
 print "Access token: " + accesstoken
-
 conn = http.clinet.HTTPSConnection("https://speech.platform.bing.com/recognize?scenarios=catsearch&appid=f84e364c-ec34-4773-a783-73707bd9a585&locale=en-US&device.os=wp7&version=3.0&format=json&requestid=" + accesstoken + "")
 headers = {"Content-Type: audio/wav",
-
 }'''

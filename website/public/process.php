@@ -31,11 +31,13 @@ try {
   if(!mkdir($uploadsDir)) {
     throw new Exception("Error creating folder with name " . $uploadsDir, 1);
   }
-  $target_file = $uploadsDir . '/' . basename($_FILES['video']['name']);
+  //$target_file = $uploadsDir . '/' . basename($_FILES['video']['name']);
+  $target_file = 'video.mp4';
   // Upload video there
   // Check if file already exists
   if (file_exists($target_file)) {
-    throw new Exception("Sorry, file already exists.", 1);
+    //throw new Exception("Sorry, file already exists.", 1);
+    unlink($target_file);
   }
   if (!move_uploaded_file($_FILES["video"]["tmp_name"], $target_file)) {
     throw new Exception("The file could not be uploaded: " . $_FILES['video']['error'], 1);
@@ -53,15 +55,10 @@ try {
     }
   }
 
-  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/video_splitter.py ' . realpath($target_file))) {
-    throw new Exception("Error executing splitter", 1);
-  }
-  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/indexer.py')) {
-    throw new Exception("Error executing summary", 1);
-  }
-  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/analysis.py results.json')) {
-    throw new Exception("Error executing summary", 1);
-  }
+  if(!shell_exec(PY_COMMAND . ' ' . '../../src/video_splitter.py ' . realpath($target_file)));
+  if(!shell_exec(PY_COMMAND . ' ' . '../../src/indexer.py'));
+  if(!shell_exec(PY_COMMAND . ' ' . '../../src/analysis.py results.json'));
+
   header('Location: ./index.php?file=results.json');
   exit();
 } catch(Exception $e) {

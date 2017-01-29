@@ -31,7 +31,7 @@ if __name__ == '__main__':
         if len(response) == 1:
             print 'ERROR'
         else:
-            responses.append({'frame': image.split('.')[0], 'faces': response, 'speech': text_list[i], 'keyphrases': keyphrase_list[i]})
+            responses.append({'frame': image.split('.')[0][1:], 'faces': response, 'speech': text_list[i], 'keyphrases': keyphrase_list[i]})
 
     with open(os.path.join(dirconf.DATA, 'summary.json'), 'w+') as summary:
         json.dump(responses, summary, indent=4)

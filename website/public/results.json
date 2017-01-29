@@ -1,0 +1,182 @@
+{
+    "videoAverages": {
+        "videoAnger": 0.0063580217007396245, 
+        "videoSadness": 0.0021909956617060626, 
+        "videoFear": 0.0010774416403321874, 
+        "videoDisgust": 0.0010090339606447498, 
+        "videoNeutral": 0.5023769384465993, 
+        "videoHappiness": 0.3357069253946177, 
+        "videoContempt": 0.006680145156771436, 
+        "videoSurprise": 0.019600501636134936
+    }, 
+    "averages": [
+        {
+            "averageDisgust": "0.000026260895470", 
+            "averageFear": "0.000000427579238", 
+            "averageSurprise": "0.000176590398175", 
+            "averageSadness": "0.000030339627216", 
+            "averageNeutral": "0.560038216500000", 
+            "frame": "0004", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.439146465000000", 
+            "averageContempt": "0.000562981405000", 
+            "averageAnger": "0.000018745709132"
+        }, 
+        {
+            "averageDisgust": "0.000557172414500", 
+            "averageFear": "0.000003657188950", 
+            "averageSurprise": "0.001243919425500", 
+            "averageSadness": "0.000115951721860", 
+            "averageNeutral": "0.502506637000000", 
+            "frame": "0006", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.487453868000000", 
+            "averageContempt": "0.007538331780000", 
+            "averageAnger": "0.000580482443615"
+        }, 
+        {
+            "averageDisgust": "0.000026949155650", 
+            "averageFear": "0.000000653089160", 
+            "averageSurprise": "0.006472258664500", 
+            "averageSadness": "0.000032206862000", 
+            "averageNeutral": "0.488504900000000", 
+            "frame": "0008", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.501202850000000", 
+            "averageContempt": "0.003719394350000", 
+            "averageAnger": "0.000040807650750"
+        }, 
+        {
+            "averageDisgust": "0.000180838016679", 
+            "averageFear": "0.000025428436282", 
+            "averageSurprise": "0.003217717710800", 
+            "averageSadness": "0.000785021436358", 
+            "averageNeutral": "0.569669983500000", 
+            "frame": "0010", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.424176656000000", 
+            "averageContempt": "0.000413042959000", 
+            "averageAnger": "0.001531313297932"
+        }, 
+        {
+            "averageDisgust": "0.004063865056200", 
+            "averageFear": "0.000049213854409", 
+            "averageSurprise": "0.001956546308003", 
+            "averageSadness": "0.001631697929935", 
+            "averageNeutral": "0.273708162000000", 
+            "frame": "0012", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.703566412500000", 
+            "averageContempt": "0.012473012923900", 
+            "averageAnger": "0.002551071040502"
+        }, 
+        {
+            "averageDisgust": "0.000351655073667", 
+            "averageFear": "0.000025116022240", 
+            "averageSurprise": "0.000747777601533", 
+            "averageSadness": "0.001311097826000", 
+            "averageNeutral": "0.656636024666667", 
+            "frame": "0014", 
+            "attentionIndex": 0.09375, 
+            "averageHappiness": "0.339120121078000", 
+            "averageContempt": "0.001495603653000", 
+            "averageAnger": "0.000312593033557"
+        }, 
+        {
+            "averageDisgust": "0.000056043045000", 
+            "averageFear": "0.000013055911540", 
+            "averageSurprise": "0.000393757785000", 
+            "averageSadness": "0.000769316037000", 
+            "averageNeutral": "0.534629225750000", 
+            "frame": "0016", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.463512557000000", 
+            "averageContempt": "0.000251275210500", 
+            "averageAnger": "0.000374782487900"
+        }, 
+        {
+            "averageDisgust": "0.000025429439150", 
+            "averageFear": "0.000020261977395", 
+            "averageSurprise": "0.000531321987750", 
+            "averageSadness": "0.000590007200000", 
+            "averageNeutral": "0.173620582000000", 
+            "frame": "0018", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.824891279000000", 
+            "averageContempt": "0.000271367338500", 
+            "averageAnger": "0.000049758220450"
+        }, 
+        {
+            "averageDisgust": "0.000279913650333", 
+            "averageFear": "0.008829423846233", 
+            "averageSurprise": "0.073492859231100", 
+            "averageSadness": "0.003585286090000", 
+            "averageNeutral": "0.691108382666667", 
+            "frame": "0020", 
+            "attentionIndex": 0.09375, 
+            "averageHappiness": "0.217894468813333", 
+            "averageContempt": "0.003834521074967", 
+            "averageAnger": "0.000975134978333"
+        }, 
+        {
+            "averageDisgust": "0.001035641167333", 
+            "averageFear": "0.002577245793603", 
+            "averageSurprise": "0.053348702537667", 
+            "averageSadness": "0.003107371289667", 
+            "averageNeutral": "0.601738500000000", 
+            "frame": "0022", 
+            "attentionIndex": 0.09375, 
+            "averageHappiness": "0.278237120333333", 
+            "averageContempt": "0.057881690400000", 
+            "averageAnger": "0.002073734609467"
+        }, 
+        {
+            "averageDisgust": "0.006574717357098", 
+            "averageFear": "0.003968020064666", 
+            "averageSurprise": "0.143714958703456", 
+            "averageSadness": "0.008298605120487", 
+            "averageNeutral": "0.611360330253125", 
+            "frame": "0026", 
+            "attentionIndex": 1.0, 
+            "averageHappiness": "0.180591007100469", 
+            "averageContempt": "0.003573191454909", 
+            "averageAnger": "0.041919173155734"
+        }, 
+        {
+            "averageDisgust": "0.000234993705060", 
+            "averageFear": "0.000742566785600", 
+            "averageSurprise": "0.002460871825805", 
+            "averageSadness": "0.002550638228000", 
+            "averageNeutral": "0.936818897500000", 
+            "frame": "0030", 
+            "attentionIndex": 0.0625, 
+            "averageHappiness": "0.053924183625650", 
+            "averageContempt": "0.001551346524135", 
+            "averageAnger": "0.001716491970500"
+        }, 
+        {
+            "averageDisgust": "0.001002427278756", 
+            "averageFear": "0.000668934766384", 
+            "averageSurprise": "0.012594825725895", 
+            "averageSadness": "0.004026483766274", 
+            "averageNeutral": "0.815400061809130", 
+            "frame": "0032", 
+            "attentionIndex": 0.71875, 
+            "averageHappiness": "0.157927461057622", 
+            "averageContempt": "0.002166199614432", 
+            "averageAnger": "0.006213607476030"
+        }, 
+        {
+            "averageDisgust": "0.001728637115420", 
+            "averageFear": "0.000315060929615", 
+            "averageSurprise": "0.013255918272975", 
+            "averageSadness": "0.008221907452500", 
+            "averageNeutral": "0.622291111500000", 
+            "frame": "0038", 
+            "attentionIndex": 0.125, 
+            "averageHappiness": "0.299666356805475", 
+            "averageContempt": "0.011150363820000", 
+            "averageAnger": "0.043370651137932"
+        }
+    ]
+}
