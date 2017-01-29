@@ -1,7 +1,10 @@
 [
     {
         "frame": "00015", 
-        "speech": "one two three one two three thank you thank you thank you for nine divided by seven", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9987927, 
         "faces": [
             {
                 "faceRectangle": {
@@ -43,12 +46,18 @@
     }, 
     {
         "frame": "00020", 
-        "speech": "one two three one two three thank you thank you thank you for nine divided by seven", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9987927, 
         "faces": []
     }, 
     {
         "frame": "00025", 
-        "speech": "one two three one two three thank you thank you thank you for nine divided by seven", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9987927, 
         "faces": [
             {
                 "faceRectangle": {
@@ -108,7 +117,10 @@
     }, 
     {
         "frame": "00030", 
-        "speech": "one two three one two three thank you thank you thank you for nine divided by seven", 
+        "keyphrases": [
+            ""
+        ], 
+        "speech": 0.9987927, 
         "faces": []
     }
 ]
