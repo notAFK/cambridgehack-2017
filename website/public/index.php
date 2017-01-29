@@ -45,6 +45,29 @@ require_once 'header.php';
 #sadness-bar {
   background-color: darkblue;
 }
+.tab-bar {
+  padding: 15px;
+  text-align: center;
+}
+.tab-bar ul {
+  list-style: none;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+.tab-bar ul li {
+  display: inline-block;
+}
+a.tab-button {
+    padding: 10px;
+    cursor: pointer;
+}
+a.tab-button.active {
+  background: #efefef;
+}
+.dashboard_graph {
+  overflow: hidden;
+}
 </style>
           <!-- top tiles -->
           <div class="row tile_count">
@@ -215,23 +238,37 @@ require_once 'header.php';
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="dashboard_graph">
                 <div class="video-container">
-                  <video
+                  <audio
                       id="video"
                       class="video-active"
                       width="100%"
+                      style="display:block;width:100%"
                       controls="controls">
-                      <source src="test.mp4" type="video/mp4">
-                  </video>
+                      <source src="test.mp4" type="audio/mp4">
+                  </audio>
                 </div>
-                <div id="plot-video" class="demo-placeholder"></div>
-                <div id="plot-video1" class="demo-placeholder"></div>
-                <div id="plot-video2" class="demo-placeholder"></div>
-                <div id="plot-video3" class="demo-placeholder"></div>
-                <div id="plot-video4" class="demo-placeholder"></div>
-                <div id="plot-video5" class="demo-placeholder"></div>
-                <div id="plot-video6" class="demo-placeholder"></div>
-                <div id="plot-video7" class="demo-placeholder"></div>
-                <div id="plot-video8" class="demo-placeholder"></div>
+                <div class="tab-bar">
+                  <ul class="plot-tabs">
+                    <li><a class="tab-button active" data-tab="attention">Attention</a></li>
+                    <li><a class="tab-button" data-tab="happiness">Happiness</a></li>
+                    <li><a class="tab-button" data-tab="sadness">Sadness</a></li>
+                    <li><a class="tab-button" data-tab="anger">Anger</a></li>
+                    <li><a class="tab-button" data-tab="surprise">Surprise</a></li>
+                    <li><a class="tab-button" data-tab="fear">Fear</a></li>
+                    <li><a class="tab-button" data-tab="contempt">Contempt</a></li>
+                    <li><a class="tab-button" data-tab="disgust">Disgust</a></li>
+                    <li><a class="tab-button" data-tab="neutral">Neutral</a></li>
+                  </ul>
+                </div>
+                <div id="plot-video-attention" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-happiness" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-sadness" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-anger" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-surprise" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-fear" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-contempt" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-disgust" class="video-placeholder demo-placeholder"></div>
+                <div id="plot-video-neutral" class="video-placeholder demo-placeholder"></div>
               </div>
             </div>
           </div>
@@ -240,7 +277,17 @@ require_once 'header.php';
 require_once 'footer.php';
 ?>
 <script>
-var theVideoPlot;
+var theVideoPlots = {
+    "attention": {},
+    "happiness": {},
+    "sadness": {},
+    "contempt": {},
+    "anger": {},
+    "neutral": {},
+    "disgust": {},
+    "surprise": {},
+    "fear": {}
+  };
 $(document).ready(function() {
   var processData = function() {
     var d = <?=file_get_contents('test.json')?>;
@@ -306,7 +353,6 @@ $(document).ready(function() {
                      max: 1
                    }
                 };
-    console.log(graphData["attention"]);
     $.plot($("#plot-chart"), [
       {
         data: graphData["happiness"],
@@ -410,6 +456,7 @@ $(document).ready(function() {
   videoPlot = function(data) {
     graphData = processData();
     theVideo = $("#video");
+    // Create plot after video meta is loaded
     theVideo.on('loadedmetadata', function(event) {
       var theVideo = this,
           duration = theVideo.duration,
@@ -436,49 +483,83 @@ $(document).ready(function() {
                        min: 0,
                        max: duration
                      },
+                     yaxis: {
+                       min: 0,
+                       max: 1
+                     },
                      clickable: false,
                      hoverable: false,
                      grid: {
                      }
-                  };
-      theVideoPlot = $.plot($("#plot-video"), [
-        {
-          data: graphData,
-          lines: { show: true, lineWidth: 2},
-          curvedLines: {apply: true, tension: 0.5}
-        },
-        {
-          data: graphData,
-          color: '#f03b20',
-          points: {show: true},
-        },
-      ], options);
+                  },
+            doPlot = function(sentiment, color, options) {
+              // The video tag
+              var theVideo = $("#video");
+              // Add the created plot for the sentiment to the plots var, to
+              // keep reference
+              theVideoPlots[sentiment] = $.plot($("#plot-video-" + sentiment), [
+                {
+                  data: graphData[sentiment],
+                  lines: { show: true, lineWidth: 2},
+                  curvedLines: {apply: true, tension: 0.5},
+                  color: color
+                },
+                {
+                  data: graphData[sentiment],
+                  color: '#f03b20',
+                  points: {show: true},
+                },
+              ], options);
+              $("#plot-video-" + sentiment).bind("cursorupdates", function(event, cursordata) {
+                if(theVideo.get(0).paused) {
+                  theVideo.get(0).currentTime = cursordata[0].x;
+                }
+              });
+            };
+      doPlot("attention", "orange", options);
+      doPlot("happiness", "orange", options);
+      doPlot("sadness", "darkblue", options);
+      doPlot("anger", "red", options);
+      doPlot("surprise", "pink", options);
+      doPlot("fear", "purple", options);
+      doPlot("contempt", "brown", options);
+      doPlot("disgust", "darkgreen", options);
+      doPlot("neutral", "lightgray", options);
+      $(".video-placeholder").hide();
+      $("#plot-video-attention").show();
+
+      // Set interval to track video cursor
       setInterval(function () {
         if(!theVideo.paused) {
-          onTrackedVideoFrame(theVideo.currentTime, theVideo.duration); // will get you a lot more updates.
+          onTrackedVideoFrame(theVideo.currentTime, theVideo.duration);
         }
-      }, 30);
+      }, 50);
     });
-    $("#plot-video").bind("cursorupdates", function(event, cursordata) {
-      if(theVideo.get(0).paused) {
-        theVideo.get(0).currentTime = cursordata[0].x;
-      }
-    });
+
   };
+  $(".plot-tabs a").click(function(e) {
+    $(".video-placeholder").hide();
+    $(".plot-tabs a").removeClass("active");
+    $("#plot-video-" + $(this).attr("data-tab")).show();
+    $(this).addClass("active");
+  });
   setAttentionPlot();
   setPlot();
   videoPlot();
 });
 function onTrackedVideoFrame(currentTime, duration){
-    $("#current").text(currentTime);
-    $("#duration").text(duration);
-    theVideoPlot.setCursor(theVideoPlot.getCursors()[0], {
-      position: {
-        x: currentTime,
-        y: 0.5
-      }
-    });
-    theVideoPlot.draw();
+  for (var key in theVideoPlots) {
+    // skip loop if the property is from prototype
+    if (!theVideoPlots.hasOwnProperty(key)) continue;
+
+      theVideoPlots[key].setCursor(theVideoPlots[key].getCursors()[0], {
+        position: {
+          x: currentTime,
+          y: 0.5
+        }
+      });
+      theVideoPlots[key].draw();
+    }
 }
 </script>
 </body>
