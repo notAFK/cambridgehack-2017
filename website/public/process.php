@@ -53,7 +53,16 @@ try {
     }
   }
 
-  header('Location: ./upload.php?success=1');
+  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/video_splitter.py ' . realpath($target_file))) {
+    throw new Exception("Error executing splitter", 1);
+  }
+  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/indexer.py')) {
+    throw new Exception("Error executing summary", 1);
+  }
+  if(!$shell_exec(PY_COMMAND . ' ' . '../../src/analysis.py results.json')) {
+    throw new Exception("Error executing summary", 1);
+  }
+  header('Location: ./index.php?file=results.json');
   exit();
 } catch(Exception $e) {
   header('Location: ./upload.php?success=0&msg='.urlencode($e->getMessage()));

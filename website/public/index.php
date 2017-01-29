@@ -305,6 +305,7 @@ $(document).ready(function() {
       "fear": [],
       "sadness": [],
   };
+    d = d["averages"];
     for(var i=0; i<d.length; i++) {
       graphData["attention"].push([d[i]["frame"], d[i]["attentionIndex"]]);
       graphData["happiness"].push([d[i]["frame"], d[i]["averageHappiness"]]);

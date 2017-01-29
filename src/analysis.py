@@ -1,6 +1,10 @@
 import json
+import dirconf
 import collections
-with open('summary.json', 'r') as data_file:    
+
+import sys
+
+with open(dirconf.DATA+'/summary.json', 'r') as data_file:    
     data = json.load(data_file)
 
 maxfaces = 0
@@ -82,7 +86,7 @@ videoEmotions["videoAnger"] = videoAnger/float(len(data))
 
 averages = {"averages": frames, "videoAverages": videoEmotions}
 
-with open('averages.json', 'w+') as file:
+with open(dirconf.WEBSITE + '/' + sys.argv[1], 'w+') as file:
     json.dump(averages, file, indent=4)
     
 #with open('result.json', 'w+') as file:

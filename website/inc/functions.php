@@ -1,4 +1,6 @@
 <?php
+require_once 'env.php';
+
 function slugify($text)
 {
   // replace non letter or digits by -

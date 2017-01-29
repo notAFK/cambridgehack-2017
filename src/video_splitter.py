@@ -15,6 +15,8 @@ else:
 	end = 0 #define frame to capture
 
 	frame_count = str(end/1000)
+	print vidcap.grab()
+	
 	success,image = vidcap.read()
 	print "##############################"
 	print "Start duration: " + str(start)
@@ -35,7 +37,7 @@ while success:
 	print "Start duration: " + str(start)
 	print "End duration: " + str(end)
 	print "##############################"
-	vidcap.set(0, end)
+	vidcap.set(cv2.cv.CV_CAP_PROP_POS_MSEC, end)
 	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
 	start = end
 	end = end + increment
