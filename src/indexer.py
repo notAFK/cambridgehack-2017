@@ -5,6 +5,7 @@ import dirconf
 import msuplink
 import msaudio
 import mstext
+import time
 
 
 if __name__ == '__main__':
@@ -37,6 +38,8 @@ if __name__ == '__main__':
             responses.append({'frame': image.split('.')[0][1:], 'faces': [], 'speech': text_list[i], 'keyphrases': keyphrase_list[i]})
         else:
             responses.append({'frame': image.split('.')[0][1:], 'faces': response, 'speech': text_list[i], 'keyphrases': keyphrase_list[i]})
+
+        time.sleep(4)
 
     print 'RESPONSES: ' + str(len(responses))
 
