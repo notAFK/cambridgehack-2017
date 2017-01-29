@@ -8,48 +8,50 @@ maxfaces = 0
 for frame in data:
     if maxfaces < len(frame["faces"]):
         maxfaces = len(frame["faces"])
-attention = []
+        
+frames = []
+infoPerFrame = {}
+
 for frame in data:
-    attentionPerFrame ={"frame": frame["frame"], "attentionIndex": len(frame["faces"])/float(maxfaces)}
-    attention.append(attentionPerFrame)
+    totalSadness = 0
+    totalNeutral = 0
+    totalContempt = 0
+    totalDisgust = 0
+    totalAnger = 0
+    totalSurprise = 0
+    totalFear = 0
+    totalHappiness = 0
+    
+    frames.append({"frame": frame["frame"]})
+    infoPerFrame.update({"attentionIndex": len(frame["faces"])/float(maxfaces)})
+
+    for face in frame["faces"]:
+       for score in face["scores"]:
+            totalSadness += face["scores"]["sadness"]
+            totalNeutral += face["scores"]["neutral"]
+            totalContempt += face["scores"]["contempt"]
+            totalDisgust += face["scores"]["disgust"]
+            totalAnger += face["scores"]["anger"]
+            totalSurprise += face["scores"]["surprise"]
+            totalFear += face["scores"]["fear"]
+            totalHappiness += face["scores"]["happiness"]
+
+    print totalNeutral
+    print len(frame["faces"])
+    emotions={}
+    emotions["averageSadness"] = totalSadness/float(len(frame["faces"]))
+    emotions["averageNeutral"] = totalNeutral/float(len(frame["faces"]))
+    print emotions["averageNeutral"]
+    emotions["averageContempt"] = totalContempt/float(len(frame["faces"]))
+    emotions["averageDisgust"] = totalDisgust/float(len(frame["faces"]))
+    emotions["averageAnger"] = totalAnger/float(len(frame["faces"]))
+    emotions["averageSurprise"] = totalSurprise/float(len(frame["faces"]))
+    emotions["averageFear"] = totalFear/float(len(frame["faces"]))
+    emotions["averageHappiness"] = totalHappiness/float(len(frame["faces"]))
+    
+    infoPerFrame.update(emotions)       
+    frames[int(frame["frame"])].update(infoPerFrame)
 
 with open('result.json', 'w+') as file:
-    json.dump(attention, file, indent=4)
+    json.dump(frames, file, indent=4)
 
-
-##orderedAttention = collections.OrderedDict(sorted(unorderedAttention.items()))
-##
-##attention = []
-##for k, v in orderedAttention.iteritems():
-##    attention.append({k: v})
-##    
-##with open('result.json', 'w+') as file:
-##    json.dump(attention, file, indent=4)
-##
-##
-##
-#print collections.OrderedDict(attention)    
-#with open('result.json', 'w+') as file:
- #   json.dump(attention, file, indent=4)
-        
-##        
-##for frame in data:
-##    for face in frame["faces"]:
-##        for score in face["scores"]:
-##            
-##            emotions = {"totalsadness": 0, "totalneutral": 0, "totalcontempt": 0,
-##                        "totaldisgust": 0, "totalanger": 0, "totalsurprise": 0,
-##                        "totalfear": 0, "totalhappiness": 0}
-##
-##            emotions["totalsadness"] += face["scores"]["sadness"]
-##            emotions["totalneutral"] += face["scores"]["neutral"]
-##            emotions["totalcontempt"] += face["scores"]["contempt"]
-##            emotions["totaldisgust"] += face["scores"]["disgust"]
-##            emotions["totalanger"] += face["scores"]["anger"]
-##            emotions["totalsurprise"] += face["scores"]["surprise"]
-##            emotions["totalfear"] += face["scores"]["fear"]
-##            emotions["totalhappiness"] += face["scores"]["happiness"]
-##
-##            for emotion, value in emotions.iteritems():
-##                print(emotion, value/len(data))
-##    
