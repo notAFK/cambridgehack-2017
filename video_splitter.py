@@ -14,8 +14,6 @@ increment = end
 vidcap = cv2.VideoCapture(sys.argv[1])
 success,image = vidcap.read()
 dir_path = ("/data")
-
-
 while success:      
 	frame_count = str(end/1000)
 	success,image = vidcap.read()
@@ -25,14 +23,27 @@ while success:
 	print "##############################"
 	vidcap.set(0, end)
 	output = cv2.imwrite("data/" + "000" + frame_count + ".jpg", image)
+	start = end
 	end = end + increment
-	command = " ffmpeg -i " + sys.argv[1] + " -f segment -strftime 1 -segment_time 5 -segment_format wav " + "data/frame_" + frame_count + ".wav"
-
-	subprocess.call(command, shell=True)
  	#if (end >= 40000):
  		#break
 
+command = "ffmpeg -i " + sys.argv[1] + " movie.wav"
+subprocess.call(command, shell=True)
 
+from pydub import AudioSegment
+from pydub.utils import make_chunks
+
+myaudio = AudioSegment.from_file("movie.wav" , "wav") 
+chunk_length_ms = 5000 # pydub calculates in millisec
+chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
+
+#Export all of the individual chunks as wav files
+
+for i, chunk in enumerate(chunks):
+    chunk_name = "chunk{0}.wav".format(i)
+    print "exporting", chunk_name
+    chunk.export(chunk_name, format="wav")
 
 
 
