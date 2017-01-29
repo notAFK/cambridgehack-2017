@@ -80,10 +80,12 @@ videoEmotions["videoHappiness"] = videoHappiness/float(len(data))
 videoEmotions["videoContempt"] = videoContempt/float(len(data))
 videoEmotions["videoAnger"] = videoAnger/float(len(data))
 
-with open('videoEmotions.json', 'w+') as file:
-    json.dump(videoEmotions, file, indent=4)
+averages = {"averages": frames, "videoAverages": videoEmotions}
+
+with open('averages.json', 'w+') as file:
+    json.dump(averages, file, indent=4)
     
-with open('result.json', 'w+') as file:
-    json.dump(frames, file, indent=4)
+#with open('result.json', 'w+') as file:
+#    json.dump(frames, file, indent=4)
 
 
