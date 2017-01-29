@@ -2,9 +2,11 @@
     {
         "frame": "00010", 
         "keyphrases": [
-            "idea thanks"
+            "donald trumps body language", 
+            "thing", 
+            "touring"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.4889868, 
         "faces": [
             {
                 "faceRectangle": {
@@ -47,9 +49,10 @@
     {
         "frame": "00015", 
         "keyphrases": [
-            "idea thanks"
+            "open speech tire expert", 
+            "audience"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.9186241, 
         "faces": [
             {
                 "faceRectangle": {
@@ -92,9 +95,9 @@
     {
         "frame": "00020", 
         "keyphrases": [
-            "idea thanks"
+            "spector"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.8697729, 
         "faces": [
             {
                 "faceRectangle": {
@@ -137,9 +140,10 @@
     {
         "frame": "00025", 
         "keyphrases": [
-            "idea thanks"
+            "reason", 
+            "mini woodsia"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.7602073, 
         "faces": [
             {
                 "faceRectangle": {
@@ -200,9 +204,9 @@
     {
         "frame": "00030", 
         "keyphrases": [
-            "idea thanks"
+            ""
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.9842836, 
         "faces": [
             {
                 "faceRectangle": {
@@ -605,9 +609,9 @@
     {
         "frame": "00035", 
         "keyphrases": [
-            "idea thanks"
+            "words"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.308606, 
         "faces": [
             {
                 "faceRectangle": {
@@ -1100,9 +1104,11 @@
     {
         "frame": "00045", 
         "keyphrases": [
-            "idea thanks"
+            "actions kind", 
+            "body language", 
+            "little cold"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.5283813, 
         "faces": [
             {
                 "faceRectangle": {
@@ -1631,17 +1637,19 @@
     {
         "frame": "0005.", 
         "keyphrases": [
-            "idea thanks"
+            "someones interpretation", 
+            "roboticizer"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.8884163, 
         "faces": []
     }, 
     {
         "frame": "00050", 
         "keyphrases": [
-            "idea thanks"
+            "idea", 
+            "thanks"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.8582412, 
         "faces": [
             {
                 "faceRectangle": {
@@ -1954,17 +1962,20 @@
     {
         "frame": "00060", 
         "keyphrases": [
-            "idea thanks"
+            "short snippets", 
+            "zachary coz", 
+            "body ca", 
+            "lie"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.5499249, 
         "faces": []
     }, 
     {
         "frame": "00070", 
         "keyphrases": [
-            "idea thanks"
+            "chance resident"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.8435662, 
         "faces": [
             {
                 "faceRectangle": {
@@ -2295,9 +2306,10 @@
     {
         "frame": "00075", 
         "keyphrases": [
-            "idea thanks"
+            "store", 
+            "paste"
         ], 
-        "speech": 0.9431622, 
+        "speech": 0.4159345, 
         "faces": [
             {
                 "faceRectangle": {
