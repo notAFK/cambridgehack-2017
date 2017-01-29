@@ -79,7 +79,7 @@ a.tab-button.active {
               <div class="count" id="max-attentive">123</div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Min Attention Index</span>
+              <span class="count_top"><i class="fa fa-user"></i> Average Happiness Index</span>
               <div class="count" id="avg-happiness-index">123</div>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6 tile_stats_count">
@@ -252,6 +252,15 @@ a.tab-button.active {
                 <div id="plot-video-contempt" class="video-placeholder demo-placeholder"></div>
                 <div id="plot-video-disgust" class="video-placeholder demo-placeholder"></div>
                 <div id="plot-video-neutral" class="video-placeholder demo-placeholder"></div>
+                <br>
+                <div class="x_title">
+                  <h2>Key Phrases</h2>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <p id="keyphrases">ugi pula in cur</p>
+                  <div class="clearfix"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -286,16 +295,18 @@ $(document).ready(function() {
       "sadness": [],
   };
     d = a["averages"];
+    graphData["speech"] = []
     for(var i=0; i<d.length; i++) {
-      graphData["attention"].push([d[i]["frame"], d[i]["attentionIndex"]]);
-      graphData["happiness"].push([d[i]["frame"], d[i]["averageHappiness"]]);
-      graphData["neutral"].push([d[i]["frame"], d[i]["averageNeutral"]]);
-      graphData["anger"].push([d[i]["frame"], d[i]["averageAnger"]]);
-      graphData["contempt"].push([d[i]["frame"], d[i]["averageContempt"]]);
-      graphData["disgust"].push([d[i]["frame"], d[i]["averageDisgust"]]);
-      graphData["surprise"].push([d[i]["frame"], d[i]["averageSurprise"]]);
-      graphData["fear"].push([d[i]["frame"], d[i]["averageFear"]]);
-      graphData["sadness"].push([d[i]["frame"], d[i]["averageSadness"]]);
+      graphData["attention"].push([d[i]["frame"], d[i]["info"]["attentionIndex"]]);
+      graphData["happiness"].push([d[i]["frame"], d[i]["info"]["averageHappiness"]]);
+      graphData["neutral"].push([d[i]["frame"], d[i]["info"]["averageNeutral"]]);
+      graphData["anger"].push([d[i]["frame"], d[i]["info"]["averageAnger"]]);
+      graphData["contempt"].push([d[i]["frame"], d[i]["info"]["averageContempt"]]);
+      graphData["disgust"].push([d[i]["frame"], d[i]["info"]["averageDisgust"]]);
+      graphData["surprise"].push([d[i]["frame"], d[i]["info"]["averageSurprise"]]);
+      graphData["fear"].push([d[i]["frame"], d[i]["info"]["averageFear"]]);
+      graphData["sadness"].push([d[i]["frame"], d[i]["info"]["averageSadness"]]);
+      graphData["speech"][d[i]["frame"]] = {"sentiment": d[i]["speech"], "kp": d[i]["keyphrases"]};
     }
     graphData["avgs"] = a["videoAverages"];
     return graphData;
@@ -437,29 +448,29 @@ $(document).ready(function() {
       }
     ], options);
     // General data
-    $("#max-attentive").text("132");
-    $("#avg-happiness-index").text(parseFloat(graphData['avgs']['videoHappiness']*100).toFixed(2)+'%');
-    $("#avg-attention-index").text("0.42");
+    $("#max-attentive").text(graphData['avgs']['maxFaces']);
+    $("#avg-happiness-index").text(parseFloat(graphData['avgs']['averageHappiness']*100).toFixed(2)+'%');
+    $("#avg-attention-index").text(parseFloat(graphData['avgs']['attentionIndex']*100).toFixed(2)+'%');
     $("#attention-bar-avg").css("width", "42%");
-    $("#common-sentiment").text("Neutral");
-    $("#sentiment-percentage").text("50.24%");
+    $("#common-sentiment").text(graphData['avgs']['mostCommon']);
+    $("#sentiment-percentage").text(parseFloat(graphData['avgs']['mostCommonPercentage']*100).toFixed(2)+'%');
     // Sentiments
-    $("#happiness-bar").css('width', graphData['avgs']['videoHappiness']*100+'%');
-    $("#sadness-bar").css('width', graphData['avgs']['videoSadness']*100+'%');
-    $("#contempt-bar").css('width', graphData['avgs']['videoContempt']*100+'%');
-    $("#disgust-bar").css('width', graphData['avgs']['videoDisgust']*100+'%');
-    $("#anger-bar").css('width', graphData['avgs']['videoAnger']*100+'%');
-    $("#surprise-bar").css('width', graphData['avgs']['videoSurprise']*100+'%');
-    $("#fear-bar").css('width', graphData['avgs']['videoFear']*100+'%');
-    $("#neutral-bar").css('width', graphData['avgs']['videoNeutral']*100+'%');
-    $(".happiness-percent").text(parseFloat(graphData['avgs']['videoHappiness']*100).toFixed(2)+'%');
-    $(".sadness-percent").text(parseFloat(graphData['avgs']['videoSadness']*100).toFixed(2)+'%');
-    $(".contempt-percent").text(parseFloat(graphData['avgs']['videoContempt']*100).toFixed(2)+'%');
-    $(".disgust-percent").text(parseFloat(graphData['avgs']['videoDisgust']*100).toFixed(2)+'%');
-    $(".anger-percent").text(parseFloat(graphData['avgs']['videoAnger']*100).toFixed(2)+'%');
-    $(".surprise-percent").text(parseFloat(graphData['avgs']['videoSurprise']*100).toFixed(2)+'%');
-    $(".fear-percent").text(parseFloat(graphData['avgs']['videoFear']*100).toFixed(2)+'%');
-    $(".neutral-percent").text(parseFloat(graphData['avgs']['videoNeutral']*100).toFixed(2)+'%');
+    $("#happiness-bar").css('width', graphData['avgs']['averageHappiness']*100+'%');
+    $("#sadness-bar").css('width', graphData['avgs']['averageSadness']*100+'%');
+    $("#contempt-bar").css('width', graphData['avgs']['averageContempt']*100+'%');
+    $("#disgust-bar").css('width', graphData['avgs']['averageDisgust']*100+'%');
+    $("#anger-bar").css('width', graphData['avgs']['averageAnger']*100+'%');
+    $("#surprise-bar").css('width', graphData['avgs']['averageSurprise']*100+'%');
+    $("#fear-bar").css('width', graphData['avgs']['averageFear']*100+'%');
+    $("#neutral-bar").css('width', graphData['avgs']['averageNeutral']*100+'%');
+    $(".happiness-percent").text(parseFloat(graphData['avgs']['averageHappiness']*100).toFixed(2)+'%');
+    $(".sadness-percent").text(parseFloat(graphData['avgs']['averageSadness']*100).toFixed(2)+'%');
+    $(".contempt-percent").text(parseFloat(graphData['avgs']['averageContempt']*100).toFixed(2)+'%');
+    $(".disgust-percent").text(parseFloat(graphData['avgs']['averageDisgust']*100).toFixed(2)+'%');
+    $(".anger-percent").text(parseFloat(graphData['avgs']['averageAnger']*100).toFixed(2)+'%');
+    $(".surprise-percent").text(parseFloat(graphData['avgs']['averageSurprise']*100).toFixed(2)+'%');
+    $(".fear-percent").text(parseFloat(graphData['avgs']['averageFear']*100).toFixed(2)+'%');
+    $(".neutral-percent").text(parseFloat(graphData['avgs']['averageNeutral']*100).toFixed(2)+'%');
 
     $(".progress .progress-bar").progressbar();
   },
@@ -523,6 +534,11 @@ $(document).ready(function() {
               $("#plot-video-" + sentiment).bind("cursorupdates", function(event, cursordata) {
                 if(theVideo.get(0).paused) {
                   theVideo.get(0).currentTime = cursordata[0].x;
+                  // key phrases
+                  var posFrame = pad(Math.floor(cursordata[0].x), 4);
+                  if(graphData["speech"][posFrame]) {
+                    $("#keyphrases").text(graphData["speech"][posFrame]["kp"]);
+                  }
                 }
               });
             };
@@ -561,15 +577,22 @@ function onTrackedVideoFrame(currentTime, duration){
   for (var key in theVideoPlots) {
     // skip loop if the property is from prototype
     if (!theVideoPlots.hasOwnProperty(key)) continue;
-
       theVideoPlots[key].setCursor(theVideoPlots[key].getCursors()[0], {
         position: {
           x: currentTime,
           y: 0.5
         }
       });
+      var posFrame = pad(Math.floor(currentTime), 4);
+      if(graphData["speech"][posFrame]) {
+        $("#keyphrases").text(graphData["speech"][posFrame]["kp"]);
+      }
       theVideoPlots[key].draw();
     }
+}
+function pad (str, max) {
+  str = str.toString();
+  return str.length < max ? pad("0" + str, max) : str;
 }
 </script>
 </body>

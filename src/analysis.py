@@ -33,12 +33,15 @@ videoAnger = 0
 
 i = 0
 
-frames.append({"frame": data[0]["frame"], "info": {}})
+for key in analyticsKeys:
+  infoPerFrame[key] = 0
+frames.append({"frame": data[0]["frame"], "info": infoPerFrame, "keyphrases":
+              frame["keyphrases"], "speech": frame["speech"]})
 if len(data[0]["faces"]) == 0:
     infoPerFrame = {}
     for key in analyticsKeys:
       infoPerFrame[key] = 0
-    frames[0] = infoPerFrame
+    frames[0]["info"] = infoPerFrame
     i = i + 1
 
 else:
@@ -62,14 +65,14 @@ else:
       totalHappiness += face["scores"]["happiness"]
 
       infoPerFrame = {"attentionIndex": noFaces/float(maxfaces),
-                      "averageSadness": totalSadness/float(maxfaces),
-                      "averageNeutral": totalNeutral/float(maxfaces),
-                      "averageContempt": totalContempt/float(maxfaces),
-                      "averageDisgust": totalDisgust/float(maxfaces),
-                      "averageAnger": totalAnger/float(maxfaces),
-                      "averageSurprise": totalSurprise/float(maxfaces),
-                      "averageFear": totalFear/float(maxfaces),
-                      "averageHappiness": totalHappiness/float(maxfaces)}
+                      "averageSadness": totalSadness/float(noFaces),
+                      "averageNeutral": totalNeutral/float(noFaces),
+                      "averageContempt": totalContempt/float(noFaces),
+                      "averageDisgust": totalDisgust/float(noFaces),
+                      "averageAnger": totalAnger/float(noFaces),
+                      "averageSurprise": totalSurprise/float(noFaces),
+                      "averageFear": totalFear/float(noFaces),
+                      "averageHappiness": totalHappiness/float(noFaces)}
       frames[0]["info"] = infoPerFrame
 
 totalVideo = {}
@@ -87,9 +90,9 @@ for index,frame in enumerate(data[1:]):
     totalHappiness = 0
     infoPerFrame = {}
     for key in analyticsKeys:
-      infoPerFrame[key] = 0;
-    print frame
-    frames.append({"frame": frame["frame"], "info": infoPerFrame})
+      infoPerFrame[key] = 0
+    frames.append({"frame": frame["frame"], "info": infoPerFrame, "keyphrases":
+                  frame["keyphrases"], "speech": frame["speech"]})
     if len(frame["faces"])!=0:
         noFaces = len(frame["faces"])
         for face in frame["faces"]:
@@ -102,29 +105,36 @@ for index,frame in enumerate(data[1:]):
             totalFear += face["scores"]["fear"]
             totalHappiness += face["scores"]["happiness"]
         infoPerFrame = {"attentionIndex": noFaces/float(maxfaces),
-                        "averageSadness": totalSadness/float(maxfaces),
-                        "averageNeutral": totalNeutral/float(maxfaces),
-                        "averageContempt": totalContempt/float(maxfaces),
-                        "averageDisgust": totalDisgust/float(maxfaces),
-                        "averageAnger": totalAnger/float(maxfaces),
-                        "averageSurprise": totalSurprise/float(maxfaces),
-                        "averageFear": totalFear/float(maxfaces),
-                        "averageHappiness": totalHappiness/float(maxfaces)}
+                        "averageSadness": totalSadness/float(noFaces),
+                        "averageNeutral": totalNeutral/float(noFaces),
+                        "averageContempt": totalContempt/float(noFaces),
+                        "averageDisgust": totalDisgust/float(noFaces),
+                        "averageAnger": totalAnger/float(noFaces),
+                        "averageSurprise": totalSurprise/float(noFaces),
+                        "averageFear": totalFear/float(noFaces),
+                        "averageHappiness": totalHappiness/float(noFaces)}
+
+        for key, emotion in infoPerFrame.iteritems():
+          totalVideo[key] += infoPerFrame[key]
     else:
         infoPerFrame = {}
         for key in analyticsKeys:
           infoPerFrame[key] = frames[index+1]["info"][key]/2.0
-
-    for key, emotion in infoPerFrame.iteritems():
-      totalVideo[key] += infoPerFrame[key]
 
     frames[index+1]["info"] = infoPerFrame
 
 for key in analyticsKeys:
   totalVideo[key] = totalVideo[key] / float(len(data))
 
+ss = totalVideo
+h = ss.pop('attentionIndex')
+lol = ((sorted(ss, key=ss.__getitem__)[-1])
+       .split("average")[1]).capitalize()
+totalVideo["mostCommonPercentage"] = sorted(ss.values())[-1]
+totalVideo["mostCommon"] = lol
+totalVideo["maxFaces"] = maxfaces
+totalVideo["attentionIndex"] = h
 averages = {"averages": frames, "videoAverages": totalVideo}
-
 
 with open(dirconf.WEBSITE + '/' + sys.argv[1], 'w+') as file:
     json.dump(averages, file, indent=4)

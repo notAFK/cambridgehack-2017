@@ -1,182 +1,833 @@
 {
     "videoAverages": {
-        "videoAnger": 0.0063580217007396245, 
-        "videoSadness": 0.0021909956617060626, 
-        "videoFear": 0.0010774416403321874, 
-        "videoDisgust": 0.0010090339606447498, 
-        "videoNeutral": 0.5023769384465993, 
-        "videoHappiness": 0.3357069253946177, 
-        "videoContempt": 0.006680145156771436, 
-        "videoSurprise": 0.019600501636134936
+        "averageDisgust": 0.001194106067726905, 
+        "averageFear": 0.0011407735068970706, 
+        "averageSurprise": 0.019600704225727038, 
+        "averageSadness": 0.004904727817353209, 
+        "mostCommon": "Neutral", 
+        "averageContempt": 0.003276423783817424, 
+        "averageAnger": 0.005018229677413939, 
+        "attentionIndex": 0.20164917541229382, 
+        "mostCommonPercentage": 0.4564320455152249, 
+        "averageHappiness": 0.18234603308061875, 
+        "averageNeutral": 0.4564320455152249, 
+        "maxFaces": 29
     }, 
     "averages": [
         {
-            "averageDisgust": "0.000026260895470", 
-            "averageFear": "0.000000427579238", 
-            "averageSurprise": "0.000176590398175", 
-            "averageSadness": "0.000030339627216", 
-            "averageNeutral": "0.560038216500000", 
+            "info": {
+                "averageDisgust": 0, 
+                "averageFear": 0, 
+                "averageSurprise": 0, 
+                "averageSadness": 0, 
+                "averageContempt": 0, 
+                "averageAnger": 0, 
+                "attentionIndex": 0, 
+                "averageHappiness": 0, 
+                "averageNeutral": 0
+            }, 
+            "frame": "0000", 
+            "keyphrases": [
+                "thanks"
+            ], 
+            "speech": 0.8475448
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0002", 
+            "keyphrases": [
+                "thing"
+            ], 
+            "speech": 0.2948245
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 2.59830347e-06, 
+                "averageSurprise": 3.254570634e-05, 
+                "averageSadness": 7.37939885e-06, 
+                "averageHappiness": 0.42831644500000005, 
+                "averageContempt": 0.000186008151, 
+                "averageAnger": 4.328263181e-06, 
+                "averageNeutral": 0.5714506575, 
+                "averageFear": 6.10558499075e-08
+            }, 
             "frame": "0004", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.439146465000000", 
-            "averageContempt": "0.000562981405000", 
-            "averageAnger": "0.000018745709132"
+            "keyphrases": [
+                "acceptance speech"
+            ], 
+            "speech": 0.9232024
         }, 
         {
-            "averageDisgust": "0.000557172414500", 
-            "averageFear": "0.000003657188950", 
-            "averageSurprise": "0.001243919425500", 
-            "averageSadness": "0.000115951721860", 
-            "averageNeutral": "0.502506637000000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.000254078203, 
+                "averageSurprise": 0.0003425993055, 
+                "averageSadness": 6.0998581000000004e-05, 
+                "averageHappiness": 0.497115463, 
+                "averageContempt": 0.01057892005, 
+                "averageAnger": 0.0002840680605, 
+                "averageNeutral": 0.49136292800000003, 
+                "averageFear": 9.41470602e-07
+            }, 
             "frame": "0006", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.487453868000000", 
-            "averageContempt": "0.007538331780000", 
-            "averageAnger": "0.000580482443615"
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.8520697
         }, 
         {
-            "averageDisgust": "0.000026949155650", 
-            "averageFear": "0.000000653089160", 
-            "averageSurprise": "0.006472258664500", 
-            "averageSadness": "0.000032206862000", 
-            "averageNeutral": "0.488504900000000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 5.186307e-05, 
+                "averageSurprise": 0.0001815639446, 
+                "averageSadness": 0.00010199841299200001, 
+                "averageHappiness": 0.5981515765, 
+                "averageContempt": 0.009941697005, 
+                "averageAnger": 6.528528034499999e-05, 
+                "averageNeutral": 0.39150544, 
+                "averageFear": 5.77058546e-07
+            }, 
             "frame": "0008", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.501202850000000", 
-            "averageContempt": "0.003719394350000", 
-            "averageAnger": "0.000040807650750"
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.08288186
         }, 
         {
-            "averageDisgust": "0.000180838016679", 
-            "averageFear": "0.000025428436282", 
-            "averageSurprise": "0.003217717710800", 
-            "averageSadness": "0.000785021436358", 
-            "averageNeutral": "0.569669983500000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 7.631790583549999e-05, 
+                "averageSurprise": 0.0006426662932500001, 
+                "averageSadness": 0.001253208142035, 
+                "averageHappiness": 0.3779329435, 
+                "averageContempt": 0.00028466812385, 
+                "averageAnger": 0.00044212449435, 
+                "averageNeutral": 0.6193614155, 
+                "averageFear": 6.6552325486e-06
+            }, 
             "frame": "0010", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.424176656000000", 
-            "averageContempt": "0.000413042959000", 
-            "averageAnger": "0.001531313297932"
+            "keyphrases": [
+                "kennedy", 
+                "things"
+            ], 
+            "speech": 0.8797296
         }, 
         {
-            "averageDisgust": "0.004063865056200", 
-            "averageFear": "0.000049213854409", 
-            "averageSurprise": "0.001956546308003", 
-            "averageSadness": "0.001631697929935", 
-            "averageNeutral": "0.273708162000000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 1.0969118275965e-05, 
+                "averageSurprise": 2.659188618295e-05, 
+                "averageSadness": 7.46432180521e-06, 
+                "averageHappiness": 0.78345485, 
+                "averageContempt": 0.000631341284385, 
+                "averageAnger": 8.012097123415e-06, 
+                "averageNeutral": 0.215860722905, 
+                "averageFear": 3.8274569961670004e-08
+            }, 
             "frame": "0012", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.703566412500000", 
-            "averageContempt": "0.012473012923900", 
-            "averageAnger": "0.002551071040502"
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.834635
         }, 
         {
-            "averageDisgust": "0.000351655073667", 
-            "averageFear": "0.000025116022240", 
-            "averageSurprise": "0.000747777601533", 
-            "averageSadness": "0.001311097826000", 
-            "averageNeutral": "0.656636024666667", 
+            "info": {
+                "attentionIndex": 0.10344827586206896, 
+                "averageDisgust": 4.499015006666666e-05, 
+                "averageSurprise": 0.00018515724386666666, 
+                "averageSadness": 0.0004149484786666667, 
+                "averageHappiness": 0.30508290842, 
+                "averageContempt": 0.0005892779963333332, 
+                "averageAnger": 3.4067194366666666e-05, 
+                "averageNeutral": 0.693645203, 
+                "averageFear": 3.456906743333333e-06
+            }, 
             "frame": "0014", 
-            "attentionIndex": 0.09375, 
-            "averageHappiness": "0.339120121078000", 
-            "averageContempt": "0.001495603653000", 
-            "averageAnger": "0.000312593033557"
+            "keyphrases": "null", 
+            "speech": "null"
         }, 
         {
-            "averageDisgust": "0.000056043045000", 
-            "averageFear": "0.000013055911540", 
-            "averageSurprise": "0.000393757785000", 
-            "averageSadness": "0.000769316037000", 
-            "averageNeutral": "0.534629225750000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 5.5224375e-05, 
+                "averageSurprise": 0.0005606215805, 
+                "averageSadness": 0.00121036192, 
+                "averageHappiness": 0.42460190800000003, 
+                "averageContempt": 0.000635288801, 
+                "averageAnger": 0.0004521767985, 
+                "averageNeutral": 0.5724554225, 
+                "averageFear": 2.8997465e-05
+            }, 
             "frame": "0016", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.463512557000000", 
-            "averageContempt": "0.000251275210500", 
-            "averageAnger": "0.000374782487900"
+            "keyphrases": [
+                "stretches"
+            ], 
+            "speech": 0.3919922
         }, 
         {
-            "averageDisgust": "0.000025429439150", 
-            "averageFear": "0.000020261977395", 
-            "averageSurprise": "0.000531321987750", 
-            "averageSadness": "0.000590007200000", 
-            "averageNeutral": "0.173620582000000", 
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 1.5150668799999999e-05, 
+                "averageSurprise": 0.0001083149905, 
+                "averageSadness": 0.0004489932475, 
+                "averageHappiness": 0.7570095755, 
+                "averageContempt": 0.0006025526235, 
+                "averageAnger": 3.0668437999999997e-05, 
+                "averageNeutral": 0.241779737, 
+                "averageFear": 5.01023283e-06
+            }, 
             "frame": "0018", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.824891279000000", 
-            "averageContempt": "0.000271367338500", 
-            "averageAnger": "0.000049758220450"
+            "keyphrases": [
+                "lie"
+            ], 
+            "speech": 0.3580321
         }, 
         {
-            "averageDisgust": "0.000279913650333", 
-            "averageFear": "0.008829423846233", 
-            "averageSurprise": "0.073492859231100", 
-            "averageSadness": "0.003585286090000", 
-            "averageNeutral": "0.691108382666667", 
+            "info": {
+                "attentionIndex": 0.10344827586206896, 
+                "averageDisgust": 0.00026294934417, 
+                "averageSurprise": 0.20323169949966668, 
+                "averageSadness": 0.0008634742323333334, 
+                "averageHappiness": 0.25987178251733334, 
+                "averageContempt": 0.0007137016173333332, 
+                "averageAnger": 0.0012458695563333333, 
+                "averageNeutral": 0.516049293, 
+                "averageFear": 0.017761232823300003
+            }, 
             "frame": "0020", 
-            "attentionIndex": 0.09375, 
-            "averageHappiness": "0.217894468813333", 
-            "averageContempt": "0.003834521074967", 
-            "averageAnger": "0.000975134978333"
+            "keyphrases": "null", 
+            "speech": "null"
         }, 
         {
-            "averageDisgust": "0.001035641167333", 
-            "averageFear": "0.002577245793603", 
-            "averageSurprise": "0.053348702537667", 
-            "averageSadness": "0.003107371289667", 
-            "averageNeutral": "0.601738500000000", 
+            "info": {
+                "attentionIndex": 0.10344827586206896, 
+                "averageDisgust": 0.0009215442533333333, 
+                "averageSurprise": 0.06955314502146667, 
+                "averageSadness": 0.0016699683822666664, 
+                "averageHappiness": 0.42799612033333334, 
+                "averageContempt": 0.0068740939713333345, 
+                "averageAnger": 0.0013447465733333332, 
+                "averageNeutral": 0.4879568216666667, 
+                "averageFear": 0.003683561221838
+            }, 
             "frame": "0022", 
-            "attentionIndex": 0.09375, 
-            "averageHappiness": "0.278237120333333", 
-            "averageContempt": "0.057881690400000", 
-            "averageAnger": "0.002073734609467"
+            "keyphrases": "null", 
+            "speech": "null"
         }, 
         {
-            "averageDisgust": "0.006574717357098", 
-            "averageFear": "0.003968020064666", 
-            "averageSurprise": "0.143714958703456", 
-            "averageSadness": "0.008298605120487", 
-            "averageNeutral": "0.611360330253125", 
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0024", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.5461246
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.9655172413793104, 
+                "averageDisgust": 0.007659115850569643, 
+                "averageSurprise": 0.11030618079310002, 
+                "averageSadness": 0.009894732450157142, 
+                "averageHappiness": 0.16928840597984998, 
+                "averageContempt": 0.0055320185021857145, 
+                "averageAnger": 0.03047399586614285, 
+                "averageNeutral": 0.6633695357821427, 
+                "averageFear": 0.0034760159683842862
+            }, 
             "frame": "0026", 
-            "attentionIndex": 1.0, 
-            "averageHappiness": "0.180591007100469", 
-            "averageContempt": "0.003573191454909", 
-            "averageAnger": "0.041919173155734"
+            "keyphrases": [
+                "somebody"
+            ], 
+            "speech": 0.7467166
         }, 
         {
-            "averageDisgust": "0.000234993705060", 
-            "averageFear": "0.000742566785600", 
-            "averageSurprise": "0.002460871825805", 
-            "averageSadness": "0.002550638228000", 
-            "averageNeutral": "0.936818897500000", 
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0028", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.9439361
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 8.5210221e-05, 
+                "averageSurprise": 0.0052303919397, 
+                "averageSadness": 0.00163779699, 
+                "averageHappiness": 0.0192123064931, 
+                "averageContempt": 0.0003378940172, 
+                "averageAnger": 0.00231387501, 
+                "averageNeutral": 0.9699133285, 
+                "averageFear": 0.001269199930405
+            }, 
             "frame": "0030", 
-            "attentionIndex": 0.0625, 
-            "averageHappiness": "0.053924183625650", 
-            "averageContempt": "0.001551346524135", 
-            "averageAnger": "0.001716491970500"
+            "keyphrases": [
+                "store"
+            ], 
+            "speech": 0.5606549
         }, 
         {
-            "averageDisgust": "0.001002427278756", 
-            "averageFear": "0.000668934766384", 
-            "averageSurprise": "0.012594825725895", 
-            "averageSadness": "0.004026483766274", 
-            "averageNeutral": "0.815400061809130", 
+            "info": {
+                "attentionIndex": 0.9310344827586207, 
+                "averageDisgust": 0.0010308620991357554, 
+                "averageSurprise": 0.006525332189792592, 
+                "averageSadness": 0.0025144169693970377, 
+                "averageHappiness": 0.13757206106335185, 
+                "averageContempt": 0.00684909988314248, 
+                "averageAnger": 0.005468127041307408, 
+                "averageNeutral": 0.8398593460974075, 
+                "averageFear": 0.00018074183383714372
+            }, 
             "frame": "0032", 
-            "attentionIndex": 0.71875, 
-            "averageHappiness": "0.157927461057622", 
-            "averageContempt": "0.002166199614432", 
-            "averageAnger": "0.006213607476030"
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.4165658
         }, 
         {
-            "averageDisgust": "0.001728637115420", 
-            "averageFear": "0.000315060929615", 
-            "averageSurprise": "0.013255918272975", 
-            "averageSadness": "0.008221907452500", 
-            "averageNeutral": "0.622291111500000", 
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0034", 
+            "keyphrases": [
+                "crowd"
+            ], 
+            "speech": 0.9159659
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0036", 
+            "keyphrases": [
+                "big takeaway"
+            ], 
+            "speech": 0.3935316
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.13793103448275862, 
+                "averageDisgust": 0.0035382200948499997, 
+                "averageSurprise": 0.009528071108725, 
+                "averageSadness": 0.010460580142499998, 
+                "averageHappiness": 0.41795541798895, 
+                "averageContempt": 0.003050738373, 
+                "averageAnger": 0.0296467386126885, 
+                "averageNeutral": 0.52561416325, 
+                "averageFear": 0.00020608195092250003
+            }, 
             "frame": "0038", 
-            "attentionIndex": 0.125, 
-            "averageHappiness": "0.299666356805475", 
-            "averageContempt": "0.011150363820000", 
-            "averageAnger": "0.043370651137932"
+            "keyphrases": "null", 
+            "speech": "null"
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.7241379310344828, 
+                "averageDisgust": 0.0005615844866162162, 
+                "averageSurprise": 0.0016523586687833334, 
+                "averageSadness": 0.007716232880970476, 
+                "averageHappiness": 0.04547986245165553, 
+                "averageContempt": 0.0015043538433233334, 
+                "averageAnger": 0.002486850172671428, 
+                "averageNeutral": 0.9403284536190475, 
+                "averageFear": 0.00027029391656622847
+            }, 
+            "frame": "0040", 
+            "keyphrases": [
+                "engagez"
+            ], 
+            "speech": 0.4471368
+        }, 
+        {
+            "info": {
+                "attentionIndex": 1.0, 
+                "averageDisgust": 0.0010172721565198965, 
+                "averageSurprise": 0.0054947535678494495, 
+                "averageSadness": 0.0038791961949275868, 
+                "averageHappiness": 0.09622159742489207, 
+                "averageContempt": 0.012553753972389307, 
+                "averageAnger": 0.0027692576641517247, 
+                "averageNeutral": 0.877831871627586, 
+                "averageFear": 0.00023229609567773448
+            }, 
+            "frame": "0042", 
+            "keyphrases": [
+                "cloudbox"
+            ], 
+            "speech": 0.882212
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.2413793103448276, 
+                "averageDisgust": 0.00017909850795428574, 
+                "averageSurprise": 0.00033585864589571427, 
+                "averageSadness": 0.00378798396, 
+                "averageHappiness": 0.006733947508685715, 
+                "averageContempt": 0.00011979839304285714, 
+                "averageAnger": 0.003193692414742857, 
+                "averageNeutral": 0.9855566397142858, 
+                "averageFear": 9.2995625785e-05
+            }, 
+            "frame": "0044", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.1760643
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.5517241379310345, 
+                "averageDisgust": 0.00167939223138125, 
+                "averageSurprise": 0.003057294044656251, 
+                "averageSadness": 0.00499846082395625, 
+                "averageHappiness": 0.1353259684316875, 
+                "averageContempt": 0.001600650213077813, 
+                "averageAnger": 0.012210729446625, 
+                "averageNeutral": 0.840934026631875, 
+                "averageFear": 0.0001934776810725625
+            }, 
+            "frame": "0046", 
+            "keyphrases": [
+                "percent"
+            ], 
+            "speech": 0.9328489
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.6896551724137931, 
+                "averageDisgust": 0.009260281700898952, 
+                "averageSurprise": 0.05386856097687707, 
+                "averageSadness": 0.010258726529072, 
+                "averageHappiness": 0.10484847836064351, 
+                "averageContempt": 0.0022446793652424993, 
+                "averageAnger": 0.0463859228728, 
+                "averageNeutral": 0.7700952365499999, 
+                "averageFear": 0.0030381084337707605
+            }, 
+            "frame": "0048", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.6111726
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.7586206896551724, 
+                "averageDisgust": 0.0021953286974354547, 
+                "averageSurprise": 0.02938533307789091, 
+                "averageSadness": 0.010776230210590909, 
+                "averageHappiness": 0.1498546505974091, 
+                "averageContempt": 0.0019109701891763633, 
+                "averageAnger": 0.02466307887927273, 
+                "averageNeutral": 0.7767901124090909, 
+                "averageFear": 0.004424287104931365
+            }, 
+            "frame": "0050", 
+            "keyphrases": [
+                "spector"
+            ], 
+            "speech": 0.8112377
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0052", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.8090044
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0054", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.9024243
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0056", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.805267
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0058", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.6038214
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0060", 
+            "keyphrases": [
+                ""
+            ], 
+            "speech": 0.9842836
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0062", 
+            "keyphrases": "null", 
+            "speech": "null"
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.8620689655172413, 
+                "averageDisgust": 0.0023597713129631603, 
+                "averageSurprise": 0.021763677884298, 
+                "averageSadness": 0.047908952307868395, 
+                "averageHappiness": 0.077598166300724, 
+                "averageContempt": 0.00597364387938928, 
+                "averageAnger": 0.009932357885387998, 
+                "averageNeutral": 0.8328593678651999, 
+                "averageFear": 0.0016040665406511603
+            }, 
+            "frame": "0064", 
+            "keyphrases": "null", 
+            "speech": "null"
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.896551724137931, 
+                "averageDisgust": 0.0011977399159115386, 
+                "averageSurprise": 0.0012215023584692313, 
+                "averageSadness": 0.020662556981192307, 
+                "averageHappiness": 0.08310207053391391, 
+                "averageContempt": 0.007985207090863464, 
+                "averageAnger": 0.005536737721884614, 
+                "averageNeutral": 0.8800509165153845, 
+                "averageFear": 0.00024326536780538462
+            }, 
+            "frame": "0066", 
+            "keyphrases": [
+                "words"
+            ], 
+            "speech": 0.4972859
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0068", 
+            "keyphrases": [
+                "body weight"
+            ], 
+            "speech": 0.08180182
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0070", 
+            "keyphrases": "null", 
+            "speech": "null"
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.10344827586206896, 
+                "averageDisgust": 0.014010782505, 
+                "averageSurprise": 0.05370112963333334, 
+                "averageSadness": 0.0037206593366666666, 
+                "averageHappiness": 0.36175517834493337, 
+                "averageContempt": 0.0034653694833333333, 
+                "averageAnger": 0.008129888540333334, 
+                "averageNeutral": 0.5549482876666666, 
+                "averageFear": 0.00026869640103333335
+            }, 
+            "frame": "0072", 
+            "keyphrases": [
+                "end"
+            ], 
+            "speech": 0.2868945
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.0003484333394, 
+                "averageSurprise": 0.053212280975, 
+                "averageSadness": 0.001924162855, 
+                "averageHappiness": 0.000462889485, 
+                "averageContempt": 0.00606149952, 
+                "averageAnger": 0.0061797067185, 
+                "averageNeutral": 0.9303828000000001, 
+                "averageFear": 0.0014282053642049998
+            }, 
+            "frame": "0074", 
+            "keyphrases": [
+                "tronada words"
+            ], 
+            "speech": 0.7717178
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.00121605003, 
+                "averageSurprise": 0.1907842370143, 
+                "averageSadness": 0.001420120361, 
+                "averageHappiness": 0.000527706863, 
+                "averageContempt": 0.0071251798116, 
+                "averageAnger": 0.018382939384999998, 
+                "averageNeutral": 0.7754098, 
+                "averageFear": 0.005133995428015
+            }, 
+            "frame": "0076", 
+            "keyphrases": [
+                "body language"
+            ], 
+            "speech": 0.6649135
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.0005077616400000001, 
+                "averageSurprise": 0.04391626497, 
+                "averageSadness": 0.0017966494199999998, 
+                "averageHappiness": 0.012159836585, 
+                "averageContempt": 0.00039185607499999997, 
+                "averageAnger": 0.006997681355, 
+                "averageNeutral": 0.9310767, 
+                "averageFear": 0.003153271356915
+            }, 
+            "frame": "0078", 
+            "keyphrases": [
+                "little cold"
+            ], 
+            "speech": 0.5541736
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.00364549851135, 
+                "averageSurprise": 0.00130557541635, 
+                "averageSadness": 0.036806385295, 
+                "averageHappiness": 0.001271227345, 
+                "averageContempt": 0.0021956902084, 
+                "averageAnger": 0.0088868365255, 
+                "averageNeutral": 0.945687294, 
+                "averageFear": 0.00020149474521000002
+            }, 
+            "frame": "0080", 
+            "keyphrases": [
+                "roboticizer"
+            ], 
+            "speech": 0.8214635
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.000365014539, 
+                "averageSurprise": 0.0039077116795, 
+                "averageSadness": 0.004216537125, 
+                "averageHappiness": 0.0023032572400000003, 
+                "averageContempt": 0.0001586173865, 
+                "averageAnger": 0.001249603455, 
+                "averageNeutral": 0.987490237, 
+                "averageFear": 0.0003090130439
+            }, 
+            "frame": "0082", 
+            "keyphrases": [
+                "someones interpr"
+            ], 
+            "speech": 0.8778115
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.00164386519, 
+                "averageSurprise": 0.009600420299999999, 
+                "averageSadness": 0.0256431663, 
+                "averageHappiness": 0.27161439044, 
+                "averageContempt": 0.046537082665, 
+                "averageAnger": 0.0006661185699999999, 
+                "averageNeutral": 0.6430777225, 
+                "averageFear": 0.00121725545775
+            }, 
+            "frame": "0084", 
+            "keyphrases": [
+                "text"
+            ], 
+            "speech": 0.843
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.000186253077, 
+                "averageSurprise": 0.00071222068705, 
+                "averageSadness": 0.002101220425, 
+                "averageHappiness": 0.6757784485, 
+                "averageContempt": 0.001120339805, 
+                "averageAnger": 0.000308964896, 
+                "averageNeutral": 0.3197662384, 
+                "averageFear": 2.628705295e-05
+            }, 
+            "frame": "0086", 
+            "keyphrases": [
+                "thanks"
+            ], 
+            "speech": 0.8475448
+        }, 
+        {
+            "info": {
+                "attentionIndex": 0.06896551724137931, 
+                "averageDisgust": 0.0005456576165, 
+                "averageSurprise": 0.02125833298, 
+                "averageSadness": 0.0074539169225000005, 
+                "averageHappiness": 0.759318081, 
+                "averageContempt": 0.0029595017550000003, 
+                "averageAnger": 0.001044115372, 
+                "averageNeutral": 0.20340437449999998, 
+                "averageFear": 0.00401600027565
+            }, 
+            "frame": "0088", 
+            "keyphrases": [
+                "thanks"
+            ], 
+            "speech": 0.8475448
+        }, 
+        {
+            "info": {
+                "averageDisgust": 0.0, 
+                "averageFear": 0.0, 
+                "averageSurprise": 0.0, 
+                "averageSadness": 0.0, 
+                "averageContempt": 0.0, 
+                "averageAnger": 0.0, 
+                "attentionIndex": 0.0, 
+                "averageHappiness": 0.0, 
+                "averageNeutral": 0.0
+            }, 
+            "frame": "0090", 
+            "keyphrases": [
+                "thanks"
+            ], 
+            "speech": 0.8475448
         }
     ]
 }
