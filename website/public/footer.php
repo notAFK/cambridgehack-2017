@@ -40,6 +40,8 @@
 <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
 <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
 <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+<script src="vendors/flot.cursors/cursors.js"></script>
+
 <!-- DateJS -->
 <script src="vendors/DateJS/build/date.js"></script>
 <!-- JQVMap -->
