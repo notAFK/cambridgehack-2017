@@ -5,11 +5,25 @@ import dirconf
 import subprocess
 sys.path.append('/usr/local/lib/python2.7/site-packages')
 import cv2
+
+vidcap = cv2.VideoCapture(sys.argv[1])
+
 start = 0
 if (len(sys.argv) > 2):
 	end = (int(sys.arg[-1])) * 1000
 else:
-	end = 5000 #define frame to capture
+	end = 0 #define frame to capture
+
+	frame_count = str(end/1000)
+	success,image = vidcap.read()
+	print "##############################"
+	print "Start duration: " + str(start)
+	print "End duration: " + str(end)
+	print "##############################"
+	vidcap.set(0, end)
+	output = cv2.imwrite(dirconf.IMAGES + "/000" + frame_count + ".jpg", image)
+	start = end
+	end = end + 2000
 
 increment = end
 vidcap = cv2.VideoCapture(sys.argv[1])
@@ -35,7 +49,7 @@ from pydub import AudioSegment
 from pydub.utils import make_chunks
 
 myaudio = AudioSegment.from_file(dirconf.UPLOAD+"/movie.wav" , "wav")
-chunk_length_ms = 5000 # pydub calculates in millisec
+chunk_length_ms = 2000 # pydub calculates in millisec
 chunks = make_chunks(myaudio, chunk_length_ms) #Make chunks of one sec
 
 #Export all of the individual chunks as wav files
