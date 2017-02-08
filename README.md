@@ -24,11 +24,12 @@ Documentation
 
 References
 ===
+Devpost: https://devpost.com/software/cognitive-crowds-d4zchg
 
 ### License
 MIT License
 
 ### Video demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tZiVKev7SwI" frameborder="0" allowfullscreen></iframe>
+https://www.youtube.com/embed/tZiVKev7SwI
 
 ### MS CS API
